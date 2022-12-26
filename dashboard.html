@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vtamise | Fortune Yusuf Ishaku</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Balsamiq+Sans&family=Dancing+Script:wght@600&family=Jost&family=Lora&family=Montserrat&family=Pacifico&family=Playfair+Display&family=Roboto:wght@300;400&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navigator" id="toggler" data-visible="false"></div>
+    </nav>
+    <div class="container">
+        <aside class="aside">
+            <div class="top">
+                <img src="./images/vtamise-logo.png" class="logo" width="140" height="40" alt="">
+                <span class="icon-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg>
+                </span>
+            </div>
+            <div class="sidebar-menu">
+                <a href="#" class="page-link active home">
+                    <span class="material-symbols-sharp">
+                        grid_view
+                    </span>
+                    <h3 class="options">Home</h3>
+                </a>
+                <a href="#" class="page-link meetings">
+                    <span class="material-symbols-sharp">
+                        meeting_room
+                    </span>
+                    <h3 class="options">Meetings</h3>
+                </a>
+                <a href="#" class="page-link julie">
+                    <span class="material-symbols-sharp">
+                        interpreter_mode
+                    </span>
+                    <h3 class="options">Julie</h3>
+                </a>
+                <a href="#" class="page-link">
+                    <span class="material-symbols-sharp">
+                        shopping_bag
+                    </span>
+                    <h3 class="options">Cart</h3>
+                </a>
+                <a href="#" class="page-link">
+                    <span class="material-symbols-sharp">
+                        chat
+                    </span>
+                    <h3 class="options">Chats</h3>
+                    <span class="message-count">2</span>
+                </a>
+                <a href="#" class="page-link">
+                    <span class="material-symbols-sharp">
+                        forum
+                    </span>
+                    <h3 class="options">Blog</h3>
+                </a>
+                <a href="#" class="page-link">
+                    <span class="material-symbols-sharp">
+                        settings
+                    </span>
+                    <h3 class="options">Settings</h3>
+                </a>
+                <a href="#" class="page-link">
+                    <span class="material-symbols-sharp">
+                        logout
+                    </span>
+                    <h3 class="options">Logout</h3>
+                </a>
+            </div>
+            <aside class="right-aside2">
+                <h2 class="continue-reading">Continue Reading</h2>
+                <div class="story-box">
+                    <div class="story-line"></div>
+                    <div class="story-line"></div>
+                    <div class="story-line"></div>
+                    <div class="story-line"></div>
+                    <div class="story-line"></div>
+                </div>
+                <h2 class="new-recipes">Watch Now <span class="play-icon"></span></h2>
+                <div class="story-box">
+                    <div class="story-line"></div>
+                    <div class="story-line"></div>
+                    <div class="story-line"></div>
+                    <div class="story-line"></div>
+                    <div class="story-line"></div>
+                </div>
+            </aside>
+        </aside>
+        <main class="main">
+            <div class="main-part showing">
+                <div class="heading">
+                    <div class="home-part">
+                        <h2 class="welcome">Welcome Back, <span class="username">User 100</span></h2>
+                        <span class="vit"> <a href="#">Vit Score: 219</a> </span>
+                    </div>
+                </div>
+                <div class="part1">
+                    <div class="profile">
+                        <span class="image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                              </svg>
+                        </span>
+                        <span class="text">
+                            My Profile
+                        </span>
+                    </div>
+                    <div class="favourites">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                        </svg>
+                        <span class="text">Favourites</span>
+                    </div>
+                </div>
+                <div class="shopping">
+                   <div class="item"></div>
+                   <div class="item"></div>
+                   <div class="item"></div>
+                   <div class="item"></div>
+                   <div class="item"></div>
+                </div>
+                <div class="shopping">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+            <div class="julie-aspect">
+                <div class="modal">
+                    <div class="modal-pack">
+                        <div class="alert-background">
+                            <div class="alert">
+                                <h2 class="alert-head">You haven't put in your age!</h2>
+                                <div class="alert-textpart">
+                                    <p class="alert-text">Julie works with your age value to determine 
+                                        how much of each of our product you need to consume to achieve the RDA.
+                                    </p>
+                                    <p>To have the best experience using Julie, we highly advice you input your age.</p>
+                                </div>
+                                <div class="buttons">
+                                    <button class="button1">Input age</button>
+                                    <button class="button2">Continue either way</button>
+                                </div>
+                            </div> 
+                        </div>
+                        <p class="paragraph">Julia can help you get personalized smoothie recommendation based on your age, weight,
+                            diet, health issue, allergies, etc.
+                        </p>
+                        <div class="line">
+                            <div class="pole">
+                                <span class="issues">How old are you?</span>
+                                <div class="input-line">
+                                    <input type="number" id="age-input">
+                                    <!-- <div class="checkbox">
+                                            <span class="material-symbols-outlined now">
+                                                check
+                                            </span>
+                                          </div> -->
+                                </div>
+                            </div>
+                            <div class="pole"><span class="issues">Do you have any known allergies?</span>
+                                <div class="input-line">
+                                    <div class="yes">
+                                        <span class="bool">
+                                            <span class="yess">Yes:
+                                                <span class="square yessquare">
+                                                    <span class="material-symbols-outlined">
+                                                        check
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="bool">
+                                            <span class="noo">No:
+                                                <span class="square nosquare">
+                                                    <span class="material-symbols-outlined signed">
+                                                        check
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <!-- <div class="checkbox">
+                                            </div> -->
+                                </div>
+                                <div class="allergies" data-visible="false">
+                                    <ul>
+                                        <li class="allergen"><b>Please select:</b></li>
+                                        <li class="allergen">Dairy milk</li>
+                                        <li class="allergen">Lactose intolerance</li>
+                                        <li class="allergen">Gluten</li>
+                                        <li class="allergen other-allergen">
+                                            <span style="display: block;">Other</span>
+                                            <textarea type="text" name="Other Allergen" id="other"
+                                                placeholder="Please state specific allergen"></textarea>
+                                            <button class="finished">Done</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pole">
+                                <span class="issues">Any prevailing ailment?</span>
+                                <div class="input-line">
+                                    <div class="yes-no">
+                                        <span class="yes">
+                                            Yes:
+                                            <span class="checksquare">
+                                                <span class="material-symbols-outlined">check</span>
+                                            </span>
+                                        </span>
+                                        <span class="no">
+                                            No:
+                                            <span class="checksquare">
+                                                <span class="material-symbols-outlined ticked">check</span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="health">
+                                        <ul>
+                                            <li class="illness"><b>Please select:</b></li>
+                                            <li class="illness">Ulcer</li>
+                                            <li class="illness">Diabetes</li>                                            <li class="illness other-condition">
+                                                <span style="display: block;">Other</span>
+                                                <textarea name="other" id="other-condition"
+                                                    placeholder="Please specify ailment"></textarea>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="checkbox">
+                                            </div> -->
+                                </div>
+                            </div>
+                            <div class="pole"><span class="issues">Are you on a diet?</span>
+                                <div class="input-line">
+                                    <div class="yes-no">
+                                        <span class="yes">
+                                            Yes:
+                                            <span class="checksquare">
+                                                <span class="material-symbols-outlined">check</span>
+                                            </span>
+                                        </span>
+                                        <span class="no">
+                                            No:
+                                            <span class="checksquare">
+                                                <span class="material-symbols-outlined ticked">check</span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="diet">
+                                        <ul>
+                                            <li class="diets"><b>Please Select:</b></li>
+                                            <li class="diets">Weight-loss</li>
+                                            <!-- <li class="diets">Weight-gain</li> -->
+                                            <li class="diets other-diet">
+                                                <span style="display: block;">Other</span>
+                                                <textarea name="other" id="other-diet" placeholder="Please specify diet"></textarea>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- <div class="checkbox">
+                                            </div> -->
+                                </div>
+                            </div>
+                            <span>or do you want to get on a diet?</span>
+                            <div class="check-out">
+                                <h4 class="chkt-hd">
+                                    Your selections:
+                                </h4>
+                                <div class="selections">
+            
+                                </div>
+                            </div>
+                            <button class="collate" id="collate">Collate</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="juliepart">
+                    <div class="main-content">
+                        <h2 class="julie-intro">This is Julie, our special product recommendation expert.</h2>
+                        <p class="paragraph">
+                            Knowing that everyone in the world is unique and special,
+                            Julia helps you find which of our products
+                            best suits you.
+                        </p>
+                    </div>
+                    <div >
+                        <h3>What are you looking for?</h3>
+                        <!-- <div class="classes">
+                            <div class="class">Smoothies-for-weight loss</div>
+                            <div class="class">Light and Healthy</div>
+                            <div class="class">One for the road</div>
+                            <div class="class">Fine wine</div>
+                        </div> -->
+                        <button class="juliacount" id="juliaCount">Or something more personalized using JuliaCount!?</button> 
+                    </div>
+                    <div class="suggested_smoothies">
+                        <h1 class="suggested_head">Julie suggests:</h1>
+                        <div class="smoothies">
+                            <div class="smoothie">
+                                <div class="smoothie_image"></div>
+                                <button class="add_to_cart">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="meeting-part">
+            <div class="heading meeting-heading">
+                <div class="home-part">
+                    <h2 class="welcome">Meetings</h2>
+                </div>
+            </div>
+            <div class="part1">
+                <div class="profile meetings-part">
+                    <span class="text book">
+                     Book a meeting
+                    </span>
+                </div>
+                <div class="favourites meetings-part">
+                    <span class="text">Reschedule/Cancel</span>
+                </div>
+            </div>
+            <div class="meeting">
+                <h2 class="meeting-text">Live Meetings</h2>
+                <div class="meeting-box personal">
+                  <div class="meet"></div>
+                  <div class="meet-info">
+                    <div class="info">
+                        <span class="info-text">
+                            You do not have any meetings scheduled for now.<br>
+                        </span>
+                        <span class="info-info">
+                            Your next meeting is scheduled for:<br>
+                            Date:<br>
+                            Time:<br>
+                        </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="meeting-box">
+                  <div class="meet"></div>
+                    <div class="meet-info">
+                      <div class="info">
+                        <span class="info-text">
+                           Dr. Stephan Uko<br>
+                        </span>
+                        <span class="info-info">
+                           Time: Monday 11 November, 11:30am (10 minutes from now);
+                        </span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </main> 
+        <aside class="right-aside">
+            <h2 class="continue-reading">Continue Reading</h2>
+            <div class="story-box">
+                <div class="story-line"></div>
+                <div class="story-line"></div>
+                <div class="story-line"></div>
+                <div class="story-line"></div>
+                <div class="story-line"></div>
+            </div>
+            <h2 class="new-recipes">Watch Now <span class="play-icon"></span></h2>
+            <div class="story-box">
+                <div class="story-line"></div>
+                <div class="story-line"></div>
+                <div class="story-line"></div>
+                <div class="story-line"></div>
+                <div class="story-line"></div>
+            </div>
+        </aside>
+    </div>
+    <nav class="second-navbar">
+        <div class="underbar">
+              <a href="#" class="page-link active home">
+                    <span class="material-symbols-sharp">
+                        grid_view
+                    </span>
+                    <h3 class="options">Home</h3>
+                </a>
+                <a href="#" class="page-link meetings">
+                    <span class="material-symbols-sharp">
+                        meeting_room
+                    </span>
+                    <h3 class="options">Meetings</h3>
+                </a>
+                <a href="#" class="page-link julie">
+                    <span class="material-symbols-sharp">
+                        interpreter_mode
+                    </span>
+                    <h3 class="options">Julie</h3>
+                </a>
+                <a href="#" class="page-link">
+                    <span class="material-symbols-sharp">
+                        shopping_bag
+                    </span>
+                    <h3 class="options">Cart</h3>
+                </a>
+                <a href="#" class="page-link">
+                    <span class="material-symbols-sharp">
+                        chat
+                    </span>
+                    <h3 class="options">Chats</h3>
+                    <span class="message-count">2</span>
+                </a>
+                <a href="#" class="page-link">
+                    <span class="material-symbols-sharp">
+                        forum
+                    </span>
+                    <h3 class="options">Blog</h3>
+                </a>
+                <a href="#" class="page-link">
+                    <span class="material-symbols-sharp">
+                        settings
+                    </span>
+                    <h3 class="options">Settings</h3>
+                </a>
+                <a href="#" class="page-link">
+                    <span class="material-symbols-sharp">
+                        logout
+                    </span>
+                    <h3 class="options">Logout</h3>
+                </a>
+        </div>
+    </nav>
+ <script src='dashboard.js'></script>
+ <script src="dashboard2.js"></script>
+</body>
+</html>

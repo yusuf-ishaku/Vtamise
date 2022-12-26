@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(249, 249, 199);
+}
+.form-initiate{
+    width: 60vw;
+    height: fit-content !important;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin: auto;
+    margin-top: 5vh;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.form-header{
+    margin-top: 30px;
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 0 !important;
+}
+.enter{
+    display: block;
+    font-size: 20px;
+    font-family: 'Jost', sans-serif;
+    margin-top: 5px;
+    color: rgb(67, 66, 66);
+}
+.main-input{
+    width: 40vw;
+    margin: auto;
+    margin-top: 10px;
+    padding: 6px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid rgb(70, 69, 69);
+    font-family: 'Jost', sans-serif;
+}
+.password-input, .username{
+    width: 40vw;
+    margin: 20px auto 0px auto;
+    padding: 6px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid rgb(64, 63, 63);
+    font-family: 'Jost', sans-serif;
+    font-weight: 18px;
+}
+.remember-me{
+    width: 40vw;
+    margin: 0px auto 0px auto;
+    text-align: left;
+    padding-left: 3px;
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Jost', sans-serif;
+}
+.remember{
+    font-family: 'Jost', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(67, 66, 66);
+}
+a:hover{
+    color: black;
+}
+.signinbtn{
+    width: 40vw;
+    margin: 10px auto 0px auto;
+    background-color: rgb(3, 184, 3);
+    padding: 8px;
+    border: 0px;
+    border-radius: 5px;
+    color: rgb(235, 229, 229);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Jolt', sans-serif;
+}
+.signinbtn:hover{
+    opacity: .9;
+}
+.or-part{
+    margin: 0px auto 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.or{
+    font-family: 'Jolt', sans-serif;
+    margin-bottom: 0px;
+    font-weight: 550;
+}
+.orside{
+    width: 20px;
+    height: 2px;
+    background-color: rgb(39, 39, 39);
+    margin: 5px;
+}
+.signupbtn{
+    width: 40vw;
+    margin: 0px auto 0px auto;
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid rgb(3, 184, 3)!important;
+    padding: 8px;
+    border-radius: 5px;
+    color: rgb(3, 184, 3)!important;
+    font-size: 20px;
+    font-family: 'Jolt', sans-serif;
+}
+.signupbtn:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 0px;
+}
+#welcome-text{
+    font-family: "Jolt", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+@media only screen and (max-width:1145px){
+    .form-initiate{
+        width: 80vw;
+    }
+}
+@media only screen and (max-width:965px){
+    .main-input, .password-input, .signinbtn,.signupbtn, .remember-me{
+        width: 60vw;
+    }
+}
+@media only screen and (max-width:630px){
+    .enter{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width:508px){
+    .form-initiate{
+        padding-bottom: 30px;
+    }
+    .enter{
+        margin-bottom: 0px;
+    }
+
+}
+@media only screen and (max-width:360px){
+    p{
+        margin-bottom: 0px !important;
+    }
+    .or{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:344px){
+    .form-header{
+        margin-top: 15px;
+    }
+    .remember-me{
+        margin-top: 10px;
+    }
+    .signinbtn{
+        margin-top: 0px;
+    }
+}
+@media only screen and (max-width:750px){
+    .signupmethods{
+        flex-direction: column;
+    }
+    button{
+        margin-bottom: 10px;
+        width: 60vw !important;
+    }
+}

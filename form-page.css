@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.signupbtn{
+    margin-top: 2.5rem;
+    color: white !important;
+    background-color: rgb(3, 184, 3)!important;
+}
+.username{
+    margin-top: 0px;
+}
+.signupmethods{
+    width: 60vw;
+    height: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+.social-link{
+    margin-right: 1rem;
+}
+button{
+    padding: 0.5rem;
+    border: 1px solid;
+    width: 8rem;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: 'Jolt', sans-serif;
+    background-color: transparent;
+    transition-delay: 1s;
+    transition: all 0.5s ease-in;
+}
+button:hover{
+    background-color: whitesmoke;
+    border: 0px;
+}
+svg{
+    margin-right: 0.5rem;
+}
+.hide{
+    display: inline;
+    width: 1rem;
+    margin-left: -45px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.inputs{
+    width: 40vw;
+    margin: auto;
+}
+.error{
+    font-size: 14px;
+    height: 1.5rem;
+    color: rgb(243, 4, 4);
+    font-weight: 600;
+    text-align: left;
+}
+.the-input{
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: fit-content;
+}
+.password-input{
+    margin: 0 !important;
+}
+.signupbtn{
+    margin-top: 10px !important;
+}
+.username{
+    margin: 0 !important;
+}
+@media screen and (max-width:965px) {
+    .inputs{
+        width: 60vw;
+    }
+    .the-input{
+        width: 60vw;
+    }
+    .username{
+        width: 60vw !important;
+    }
+}

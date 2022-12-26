@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Doorman"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Vtamise",
+		"liveServer.settings.port": 5501
+	}
+}
