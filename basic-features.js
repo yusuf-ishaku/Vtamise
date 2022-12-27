@@ -84,7 +84,7 @@ const validateInputs = () =>{
     let usernameOkay;
     let passwordOkay;
     let emailOkay;
-    
+    let passwordLength;
     if (userNameValue === ""){
         setError(userName, "Username is required, please input");
     }else{
@@ -102,21 +102,22 @@ const validateInputs = () =>{
     if (passWordValue === ""){
         setErrorPassword(password, "Password is required to sign up!");
     }else if(passWordValue.length <8){
-        setErrorPassword(password, `Password should not be less than 8 characters`)
+        setErrorPassword(password, `Password should not be less than 8 characters`);
     }else if(passWordValue.length >15){
-        setErrorPassword(password, "Password should not be more than 15 characters")
+        setErrorPassword(password, "Password should not be more than 15 characters");
     }else{
         setSuccessPassword(password);
+        passwordLength = "Okay"
     }
     if(confirmPasswordValue === ""){
         setErrorPassword(confirmPassword, "Please re-enter your password for confirmation")
-    }else if(passWordValue !==confirmPasswordValue){
+    }else if(passWordValue !== confirmPasswordValue){
         setErrorPassword(confirmPassword, "Passwords don't match, try again")
     }else{
         setSuccessPassword(confirmPassword);
         passwordOkay = 'Okay';
     }
-    if(passwordOkay === "Okay" && emailOkay === "Okay" && usernameOkay === "Okay"){
+    if(passwordOkay === "Okay" && emailOkay === "Okay" && usernameOkay === "Okay" && passwordLength === "Okay"){
         if(validateInputs){
             let userNameValue = document.querySelector(".username").value.trim();
             let passWordValue = document.querySelector(".password-input").value.trim();
