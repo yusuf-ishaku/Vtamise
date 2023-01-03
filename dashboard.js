@@ -100,6 +100,16 @@ juliebutton.addEventListener("click", () =>{
         if(page !== julie){
             page.classList.remove("showing")
         }})
+});
+let cart = document.querySelector(".cart");
+let cartbtn = document.querySelector(".cartbtn");
+cartbtn.addEventListener("click", () =>{
+    cart.classList.add("showing");
+    pages.forEach(page => {
+        if(page !== cart){
+            page.classList.remove("showing")
+        }
+    })
 })
 // Different pages code ends here
 // let checkbox = document.querySelectorAll(".checkbox");

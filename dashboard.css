@@ -43,9 +43,10 @@ body{
 .second-navbar{
     display: none;
     position: absolute;
-    top: 92vh;
+    top: 89.5vh;
     width: 100vw;
-    height: 8vh;
+    height: fit-content;
+    padding: 0.5rem;
     background-color: wheat;
 }
 main.main{
@@ -78,9 +79,17 @@ main::-webkit-scrollbar-thumb:active{
     grid-template-columns: 20rem auto 15rem;
 }
 .navigator{
-    width: 2.8rem;
-    height: 100%;
+    width: 50px;
+    height: 90%;
     background-color: black;
+    cursor: pointer;
+}
+.feed{
+    margin: 0 10px 0 auto;
+}
+.feed-page{
+    color: black;
+    margin-left: auto;
 }
 .aside{
     z-index: -9999;
@@ -302,7 +311,24 @@ main::-webkit-scrollbar-thumb:active{
 }
 .underbar{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    margin: 0;
+}
+.underbar > .page-link > .options{
+    font-size: 1rem;
+}
+.underbar > .page-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.second-navbar{
+    display: flex;
+    align-items: center;
 }
 .smoothies{
     max-width: 100%;
@@ -320,9 +346,7 @@ main::-webkit-scrollbar-thumb:active{
     box-shadow: var(--box-shadow-2);
 }
 .add_to_cart{
-    position: fixed;
-    top: 91%;
-    width: 10rem;
+    width: 100%;
     height: 2.2rem;
     align-self: flex-end;
     font-size: 1.2rem;
@@ -333,6 +357,10 @@ main::-webkit-scrollbar-thumb:active{
     padding: 0;
     transition: background-color 200ms ease-in;
     cursor: pointer;
+}
+.smoothie-text{
+    width: 100%;
+    height: 34%;
 }
 .add_to_cart:hover{
     background-color: white;
@@ -355,11 +383,12 @@ main::-webkit-scrollbar-thumb:active{
         position: fixed;
         width: 100vw;
         display: grid;
-        grid-template-columns: 0rem auto 16rem;
+        grid-template-columns: 0rem auto ;
     }
 
     .navbar {
-        display: block;
+        display: flex;
+        align-items: center;
         position: relative;
         z-index: 9999;
     }
@@ -379,6 +408,7 @@ main::-webkit-scrollbar-thumb:active{
     }
 
     .right-aside {
+        display: none;
         padding-top: 2rem;
     }
 }
@@ -835,6 +865,49 @@ h4.chkt-hd{
 span.x{
     display: inline-block;
     margin-left: 0.5rem;
+}
+/* For the cart page */
+.cart{
+    display: block;
+}
+.crt-showing{
+    display: flex;
+}
+.crt-is{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto ;
+}
+.crt-emt{
+    display: none !important;
+}
+.cart-header{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.y-ct{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.no-item{
+    width: 100%;
+    height: 30rem;
+    border: 1px dashed black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.no-item-info{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.shop{
+    color: grey;
+}
+.cntn-shpg{
+    font-size: var(--small-font);
 }
 @media screen and (max-width:992px){
     .main-part{

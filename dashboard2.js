@@ -5,7 +5,8 @@ let smoothies = [
         allergen: "Dairy milk",
         servings: 1,
         recipe: "2 cups + 1 banana + 1/4 cup of oats milk, or any other vegetable milk you can get + 2 tablespoons of maple syrup",
-        calories: 152
+        calories: 152,
+        id: 1
     },
     {
         smoothie: "Dairy-free strawberry banana smoothie",
@@ -13,7 +14,8 @@ let smoothies = [
         allergen: "Dairy milk",
         servings: 1,
         recipe: "1-2 cups orange juice or dairy-free milk + 2 bananas + 2 cups hulled strawberries, fresh or frozen + juice of 1 lime + 1 tablespoon honey + 1 tablespoon ground flaxseed",
-        calories: 250
+        calories: 250,
+        id: 2
     },
     {
         smoothie: "Peanut-butter chocolate smoothies",
@@ -21,7 +23,8 @@ let smoothies = [
         tag: "Dairy free",
         servings: 1,
         recipe: "2 ripe spotty bananas peeled + 2 tablespoons organic natural peanut butter + 1.5 tablespoon unsweetened cocoa powder + ½-1 cup unsweetened non-dairy milk + 1-2 tablespoon(s) pure maple syrup optional + 3-4 ice cubes",
-        allergen: "Dairy milk"
+        allergen: "Dairy milk",
+        id: 3
     },
     {
         smoothie: "Orange Creamsicle smoothies",
@@ -29,13 +32,15 @@ let smoothies = [
         servings: 1,
         recipe: `3 oranges + 15 ounce lite milk + 1 teaspoon vanilla extract + 2 tablespoons honey, to taste \n Directions: Peel the oranges removing as much of the white pith as possible, segment the orange and place on a tray and freeze, when oranges are frozen to desire, blend all ingredients till they are smooth`,
         allergen: "Dairy milk",
-        permutation: "GL"
+        permutation: "GL",
+        id: 4
     },
     {
         smoothie: "Banana-Peanut butter Smoothies",
         calories: 330,
         servings: 1,
         allergen: "Gluten",
+        id: 5,
         recipe: "1/2 cup milk + 1 banana (small ripe) + 1/4 cup Jif Natural Creamy Peanut Butter Spread + 2 Tbsp. honey + 6 ice cubes + whipped cream + chocolate sprinkles"
     },
     {
@@ -44,6 +49,7 @@ let smoothies = [
         tag: "Gluten-free",
         servings: 1,
         allergen: "Gluten",
+        id: 6,
         recipe: "1 cup spinach + 1/2 cup water or dairy free milk of choice + 1 banana + 1 tbsp nut butter + 2 tbsp gluten free oats (optional) + 1 tbsp shredded coconut + 1/2 cup mango + 1/2 cup pineapple"
     },
     {
@@ -52,6 +58,7 @@ let smoothies = [
         allergen: "Gluten",
         servings: 1,
         tag: "Gluten-free",
+        id: 7,
         recipe: "1 cup soy or almond milk + 3 seedless oranges, peeled and segmented + 1 banana, frozen in chunks"
     },
     {
@@ -61,6 +68,7 @@ let smoothies = [
         tag: "Gluten-free",
         servings: 1,
         permutation: "GL",
+        id: 8,
         recipe: "Frozen strawberries, vanilla extract, coconut milk, frozen banana, shredded cocount"
     },
     {
@@ -68,6 +76,7 @@ let smoothies = [
         ailment: "Ulcer",
         permutation: "GLU",
         tag: "Ulcer cushioning",
+        id: 9,
         servings: 1,
         calories: 250,
         recipe: "1 unripe potato + 1 green banana + 1/2 glass of water(100ml) \n Instructions: Wash the potato, remove its skin and cut it into several pieces. Blend it until you get potato juice. Then, cut the green banana into several pieces and add them to the pitcher of the blender along with the potato juice. Finally, add half a glass of water to make it easier to liquify and process, until everything is properly mixed.",
@@ -76,6 +85,7 @@ let smoothies = [
         smoothie: "Cabbage, apple, ginger, celery ulcer burning",
         ailment: "Ulcer",
         calories: 290,
+        id: 10,
         servings: 1,
         tag: "Ulcer cushioning",
         recipe : "Properly wash all the fruits and place them on a very clean surface. Position your clean juicer on the table and place the cabbage in the juicer. “The juicer helps separate the cabbage fiber from the cabbage juice and we get to have the cabbage juice collected. \n The apple and a half is also placed in the juicer there after as well as the ginger and the celery. The juices from all are collected and the mixture is your smoothie."
@@ -83,6 +93,7 @@ let smoothies = [
     {
         smoothie: "Banana-potato-ginger smoothie",
         ailment: "Ulcer",
+        id: 11,
         tag: "Ulcer cushioning",
         permutation: "GLU",
         servings: 1,
@@ -100,6 +111,7 @@ let smoothies = [
     {
         smoothie: "Diabetic-friendly green smoothie",
         ailment: "Diabetes",
+        id:12,
         tag: "Diabetic-friendly",
         servings: 1,
         permutation: "GLUD",
@@ -111,6 +123,7 @@ let smoothies = [
         ailment: "Diabetes",
         tag: "Diabetic friendly",
         servings: 1,
+        id: 13,
         calories: 133,
         recipe: "200 g or one large grapefruit peeled and diced + Juice of 2 lemons + 1/2 cup/110ml of coconut water"
         
@@ -121,6 +134,7 @@ let smoothies = [
         tag: "Weight loss smoothie",
         servings: 1,
         calories: 231,
+        id: 14, 
         recipe: "1 cup spinach + 2 tbsp fresh mint + 1 stalk celery chopped + 1/2 cup brewed green tea cooled + 1/2 grapefruit peeled and seeded + 1 cup pineapple frozen + 1/4 avocado + dash cayenne pepper optional + 1 serving Protein Smoothie Boost  optional"
     },
     {
@@ -129,6 +143,7 @@ let smoothies = [
         tag: "Weight loss smoothie",
         servings: 1,
         calories: 250,
+        id: 15,
         recipe: "3/4 cup fresh spinach + 3/4 cup frozen pineapple + 1/2 banana, frozen (peel and freeze ahead of time) + 1 tablespoon coconut flakes (unsweetened, toasted works great too!) + 2 scoops collagen peptides powder (see product recommendations) + 1 tsp matcha green tea powder + Juice from 1/2 lime + 3/4 cup unsweetened almond milk"
     },
     {
@@ -137,6 +152,7 @@ let smoothies = [
         tag: "Weight loss smoothie",
         permutation: "GLUDW",
         calories: 279,
+        id: 16,
         servings: 1,
         recipe: " 1/3 cup coconut water + juice of 1/2 small lemon + 2 cups spinach or kale + 1/4 peeled avocad + 1 peach, pitted (or 1 cup frozen peaches) + 1/4 slice fresh peeled ginger + 1 teaspoon hemp, chia, or flax seeds + 1 scoop pea protein powder (unflavored or vanilla) + ice"
     }
@@ -153,6 +169,14 @@ resolve.onclick = () =>{
 un_resolve.onclick = () =>{
     re_input.style.display = "none";
     yessir = true
+}
+let addToCart = (e) =>{
+    let i = e.parentElement.id;
+    let cartItems = JSON.parse(localStorage.getItem('Cart')) || [];
+    if(!cartItems || cartItems.length === 0)localStorage.setItem("Cart", JSON.stringify(cartItems));
+    
+    cartItems.push(smoothies[i]);
+    localStorage.setItem("Cart", JSON.stringify(cartItems));
 }
 collate_button.onclick = () =>{
     let determine = (added_arr, user_smoothies) =>{
@@ -198,11 +222,12 @@ collate_button.onclick = () =>{
             let mapper = document.querySelector(".suggested_smoothies");
             let smoothie_shelf = mapper.querySelector(".smoothies");
             smoothie_shelf.innerHTML = "";
-            user_smoothies.map(element =>{
+            user_smoothies.map((x) =>{
                 return(
-                    smoothie_shelf.innerHTML += `<div class="smoothie"> <div class="smoothie_image"></div><h3>${element.smoothie}</h3><p class="servings">${element.servings.toFixed(2)} Servings (for calories needed)</p> <button class="add_to_cart">Add to cart</button></div>`
+                    smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
                 )
             });
+          
             added_arr.forEach(element => element.classList.remove("added"));
             let selections = document.querySelector(".selections")
             selections.innerHTML = "";
@@ -222,7 +247,6 @@ collate_button.onclick = () =>{
         }
         else{
             setTimeout(determine, 4000, added_arr, user_smoothies);
-            
         }
         
     }    
@@ -388,7 +412,7 @@ collate_button.onclick = () =>{
             if(added_arr.length === 0){
                 alert("You have not made any preference");
             }else{
-                determine(added_arr, user_smoothies)
+                setTimeout(determine, 3000, added_arr, user_smoothies);
             }
             document.querySelector("#age-input").value = "";
         }else if(age_value >= 31 && age_value <= 50){

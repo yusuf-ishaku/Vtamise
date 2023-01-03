@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vtamise | Fortune Yusuf Ishaku</title>
+    <title>Vtamise | User 100</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -21,6 +21,9 @@
 <body>
     <nav class="navbar">
         <div class="navigator" id="toggler" data-visible="false"></div>
+        <div class="feed">
+            <a href="#" class="feed-page">Feed</a>
+        </div>
     </nav>
     <div class="container">
         <aside class="aside">
@@ -53,7 +56,7 @@
                     </span>
                     <h3 class="options">Julie</h3>
                 </a>
-                <a href="#" class="page-link">
+                <a href="#" class="page-link cartbtn">
                     <span class="material-symbols-sharp">
                         shopping_bag
                     </span>
@@ -105,7 +108,7 @@
             </aside>
         </aside>
         <main class="main">
-            <div class="main-part showing">
+            <div class="main-part">
                 <div class="heading">
                     <div class="home-part">
                         <h2 class="welcome">Welcome Back, <span class="username">User 100</span></h2>
@@ -319,6 +322,7 @@
                         <div class="smoothies">
                             <div class="smoothie">
                                 <div class="smoothie_image"></div>
+                                <div class="smoothie-text"></div>
                                 <button class="add_to_cart">Add to cart</button>
                             </div>
                         </div>
@@ -373,6 +377,22 @@
                 </div>
             </div>
         </div>
+        <section class="cart">
+           <div class="cart-header">
+                <h2 class="y-ct">Your Cart</h2>
+           </div>
+           <div class="cart-items">
+            <div class="no-item">
+                <h1 class="no-item-info">
+                    Your Cart is Empty
+                </h1>
+                <p class="cntn-shpg">Your cart items, <a href="#" class="shop">continue shopping</a> to add items to your cart!</p>
+            </div>
+            <div class="crt-is">
+                
+            </div>
+           </div>
+        </section>
         </main> 
         <aside class="right-aside">
             <h2 class="continue-reading">Continue Reading</h2>
@@ -393,7 +413,7 @@
             </div>
         </aside>
     </div>
-    <nav class="second-navbar">
+    <!-- <nav class="second-navbar">
         <div class="underbar">
               <a href="#" class="page-link active home">
                     <span class="material-symbols-sharp">
@@ -420,17 +440,10 @@
                     <h3 class="options">Cart</h3>
                 </a>
                 <a href="#" class="page-link">
-                    <span class="material-symbols-sharp">
-                        chat
+                    <span class="material-symbols-outlined">
+                        groups
                     </span>
-                    <h3 class="options">Chats</h3>
-                    <span class="message-count">2</span>
-                </a>
-                <a href="#" class="page-link">
-                    <span class="material-symbols-sharp">
-                        forum
-                    </span>
-                    <h3 class="options">Blog</h3>
+                    <h3 class="options">Socials</h3>
                 </a>
                 <a href="#" class="page-link">
                     <span class="material-symbols-sharp">
@@ -438,15 +451,17 @@
                     </span>
                     <h3 class="options">Settings</h3>
                 </a>
-                <a href="#" class="page-link">
+                <!-- <a href="#" class="page-link">
                     <span class="material-symbols-sharp">
                         logout
                     </span>
                     <h3 class="options">Logout</h3>
-                </a>
-        </div>
-    </nav>
+                </a> -->
+                <!--The chats and blog icon will be found under the socials in the responsive layout of the page and the logout will be found in the settings-->
+        <!-- </div>
+    </nav> -->
  <script src='dashboard.js'></script>
  <script src="dashboard2.js"></script>
+ <script src="dashboard3.js"></script>
 </body>
 </html>
