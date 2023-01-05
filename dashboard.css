@@ -254,16 +254,17 @@ main::-webkit-scrollbar-thumb:active{
 }
 .shopping{
     margin: 2rem auto;
-    width:100%;
+    max-width:100%;
     padding: 0.6rem;
-    height: 15rem;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
+    height: 20rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto ;
     gap: 0.5rem;
 }
 .item{
-    width: 20%;
+    width: 14rem;
+    height: 22rem;
     background-color: red;
 }
 .right-aside{
@@ -332,7 +333,9 @@ main::-webkit-scrollbar-thumb:active{
 }
 .smoothies{
     max-width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     height: fit-content;
     border-radius: 4px;
     gap: 0.8rem;

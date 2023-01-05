@@ -66,12 +66,15 @@ linked.forEach((link) =>{
             }
         }
     })
-})
+});
 
 let main = document.querySelector(".main");
 let pages = Array.from(main.children);
 let home = document.querySelector(".main-part");
 let homebutton = document.querySelector(".home");
+
+
+// homebutton.addEventListener("click", displayPage(home, pages));
 homebutton.addEventListener("click", () =>{
     pages.forEach(page => {
         if(page !== home){
