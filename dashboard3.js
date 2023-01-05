@@ -16,5 +16,5 @@ if(!cartItems){
     })
 }
 }
-setInterval(displayCart, 1000);
+setInterval(displayCart, 1100);
 // setInterval(displayCart,100, cartItems, no_item)
