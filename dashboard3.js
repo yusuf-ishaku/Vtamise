@@ -1,17 +1,17 @@
 let displayCart = () =>{
-let cartItems = JSON.parse(localStorage.getItem("Cart")) || [];
-if(!cartItems)localStorage.setItem("Cart", JSON.stringify(cartItems))
+let cartItems = JSON.parse(localStorage.getItem("Cart"));
 let no_item = document.querySelector(".no-item");
-if(cartItems.length === 0 || !cartItems){
-    no_item.classList.add("crt-showing");
+let cart = document.querySelector('.crt-is');
+if(!cartItems){
+   no_item.classList.remove('crt-emt');
+   cart.classList.add("crt-emt");
 }else{
-    no_item.classList.remove("crt-showing");
     no_item.classList.add("crt-emt");
-    let cart = document.querySelector('.crt-is');
+    cart.classList.remove("crt-emt")
     cart.innerHTML = ""
     cartItems.map((x) =>{
         return(
-           cart.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p></div><button class="add_to_cart" onclick = "addToCart(this)">Checkout</button></div>`
+           cart.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src= "${x.imgsrc}" alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p></div><button class="add_to_cart" onclick = "">Checkout</button></div>`
         )
     })
 }

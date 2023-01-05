@@ -6,7 +6,8 @@ let smoothies = [
         servings: 1,
         recipe: "2 cups + 1 banana + 1/4 cup of oats milk, or any other vegetable milk you can get + 2 tablespoons of maple syrup",
         calories: 152,
-        id: 1
+        id: 1,
+        imgsrc: "images/smoothie3.png"
     },
     {
         smoothie: "Dairy-free strawberry banana smoothie",
@@ -15,7 +16,8 @@ let smoothies = [
         servings: 1,
         recipe: "1-2 cups orange juice or dairy-free milk + 2 bananas + 2 cups hulled strawberries, fresh or frozen + juice of 1 lime + 1 tablespoon honey + 1 tablespoon ground flaxseed",
         calories: 250,
-        id: 2
+        id: 2,
+        imgsrc: "images/smoothie6.png"
     },
     {
         smoothie: "Peanut-butter chocolate smoothies",
@@ -24,7 +26,8 @@ let smoothies = [
         servings: 1,
         recipe: "2 ripe spotty bananas peeled + 2 tablespoons organic natural peanut butter + 1.5 tablespoon unsweetened cocoa powder + ½-1 cup unsweetened non-dairy milk + 1-2 tablespoon(s) pure maple syrup optional + 3-4 ice cubes",
         allergen: "Dairy milk",
-        id: 3
+        id: 3,
+        imgsrc: "images/smoothie5.png"
     },
     {
         smoothie: "Orange Creamsicle smoothies",
@@ -33,7 +36,8 @@ let smoothies = [
         recipe: `3 oranges + 15 ounce lite milk + 1 teaspoon vanilla extract + 2 tablespoons honey, to taste \n Directions: Peel the oranges removing as much of the white pith as possible, segment the orange and place on a tray and freeze, when oranges are frozen to desire, blend all ingredients till they are smooth`,
         allergen: "Dairy milk",
         permutation: "GL",
-        id: 4
+        id: 4,
+        imgsrc: "images/smoothie2.png"
     },
     {
         smoothie: "Banana-Peanut butter Smoothies",
@@ -41,6 +45,7 @@ let smoothies = [
         servings: 1,
         allergen: "Gluten",
         id: 5,
+        imgsrc: "images/smoothie1.png",
         recipe: "1/2 cup milk + 1 banana (small ripe) + 1/4 cup Jif Natural Creamy Peanut Butter Spread + 2 Tbsp. honey + 6 ice cubes + whipped cream + chocolate sprinkles"
     },
     {
@@ -50,6 +55,7 @@ let smoothies = [
         servings: 1,
         allergen: "Gluten",
         id: 6,
+        imgsrc: "images/smoothie1.png",
         recipe: "1 cup spinach + 1/2 cup water or dairy free milk of choice + 1 banana + 1 tbsp nut butter + 2 tbsp gluten free oats (optional) + 1 tbsp shredded coconut + 1/2 cup mango + 1/2 cup pineapple"
     },
     {
@@ -59,6 +65,7 @@ let smoothies = [
         servings: 1,
         tag: "Gluten-free",
         id: 7,
+        imgsrc: "images/smoothie2.png",
         recipe: "1 cup soy or almond milk + 3 seedless oranges, peeled and segmented + 1 banana, frozen in chunks"
     },
     {
@@ -69,6 +76,7 @@ let smoothies = [
         servings: 1,
         permutation: "GL",
         id: 8,
+        imgsrc: "images/smoothie3.png",
         recipe: "Frozen strawberries, vanilla extract, coconut milk, frozen banana, shredded cocount"
     },
     {
@@ -79,6 +87,7 @@ let smoothies = [
         id: 9,
         servings: 1,
         calories: 250,
+        imgsrc: "images/smoothie1.png",
         recipe: "1 unripe potato + 1 green banana + 1/2 glass of water(100ml) \n Instructions: Wash the potato, remove its skin and cut it into several pieces. Blend it until you get potato juice. Then, cut the green banana into several pieces and add them to the pitcher of the blender along with the potato juice. Finally, add half a glass of water to make it easier to liquify and process, until everything is properly mixed.",
     },
     {
@@ -88,6 +97,7 @@ let smoothies = [
         id: 10,
         servings: 1,
         tag: "Ulcer cushioning",
+        imgsrc: "images/smoothie4.png",
         recipe : "Properly wash all the fruits and place them on a very clean surface. Position your clean juicer on the table and place the cabbage in the juicer. “The juicer helps separate the cabbage fiber from the cabbage juice and we get to have the cabbage juice collected. \n The apple and a half is also placed in the juicer there after as well as the ginger and the celery. The juices from all are collected and the mixture is your smoothie."
     },
     {
@@ -98,6 +108,7 @@ let smoothies = [
         permutation: "GLU",
         servings: 1,
         calories: 280,
+        imgsrc: "images/smoothie1.png",
         recipe: "1 unripe potato + 1 green banana + 1-2 pieces of ginger + 1/2 glass of clean water (100ml) \n Instructions: Wash the potato, remove it's skin and cut  into several pieces. Blend it until you get potato juice. Then, cut the green banana into several pieces and add them to the pitcher along with the potato juice. Grind the ginger to a pulp and add it to the mix. Finally, add half a glass of wate to make it easier to liquefy and process, until everything is properly mixed."
     },
     {
@@ -106,6 +117,7 @@ let smoothies = [
         tag: "Diabetic friendly",
         servings: 1,
         calories: 209,
+        imgsrc: "images/smoothie5.png",
         recipe: "1 frozen avocado + 1/2 frozen banana + 1 tbsp of unsweetened cocoa powder + 1 cup(220ml) frozen diary-free milk unsweetened"
     },
     {
@@ -116,6 +128,7 @@ let smoothies = [
         servings: 1,
         permutation: "GLUD",
         calories: 189,
+        imgsrc: "images/smoothie5.png",
         recipe: "30g of spinach + 1/4 avocado flesh scooped out + 1 medium sized green apple diced + 200ml of cold water + 1tbsp minced fresh ginger"
     },
     {
@@ -125,6 +138,7 @@ let smoothies = [
         servings: 1,
         id: 13,
         calories: 133,
+        imgsrc: "images/smoothie2.png",
         recipe: "200 g or one large grapefruit peeled and diced + Juice of 2 lemons + 1/2 cup/110ml of coconut water"
         
     },
@@ -135,6 +149,7 @@ let smoothies = [
         servings: 1,
         calories: 231,
         id: 14, 
+        imgsrc: "images/smoothie5.png",
         recipe: "1 cup spinach + 2 tbsp fresh mint + 1 stalk celery chopped + 1/2 cup brewed green tea cooled + 1/2 grapefruit peeled and seeded + 1 cup pineapple frozen + 1/4 avocado + dash cayenne pepper optional + 1 serving Protein Smoothie Boost  optional"
     },
     {
@@ -144,10 +159,12 @@ let smoothies = [
         servings: 1,
         calories: 250,
         id: 15,
+        imgsrc: "images/smoothie5.png",
         recipe: "3/4 cup fresh spinach + 3/4 cup frozen pineapple + 1/2 banana, frozen (peel and freeze ahead of time) + 1 tablespoon coconut flakes (unsweetened, toasted works great too!) + 2 scoops collagen peptides powder (see product recommendations) + 1 tsp matcha green tea powder + Juice from 1/2 lime + 3/4 cup unsweetened almond milk"
     },
     {
         smoothie: "Weight loss green smoothie",
+        imgsrc: "images/smoothie5.png",
         diet: "Weight loss",
         tag: "Weight loss smoothie",
         permutation: "GLUDW",
@@ -224,7 +241,7 @@ collate_button.onclick = () =>{
             smoothie_shelf.innerHTML = "";
             user_smoothies.map((x) =>{
                 return(
-                    smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
+                    smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
                 )
             });
           
