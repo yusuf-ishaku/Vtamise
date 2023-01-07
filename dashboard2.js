@@ -1,6 +1,7 @@
 let smoothies = [
     {
         smoothie: "Dairy Free Strawberry Smoothies",
+        price: `$${3.99}`,
         tag: "Dairy Free",
         allergen: "Dairy milk",
         servings: 1,
@@ -12,6 +13,7 @@ let smoothies = [
     {
         smoothie: "Dairy-free strawberry banana smoothie",
         tag: "Dairy free",
+        price: `$${3.99}`,
         allergen: "Dairy milk",
         servings: 1,
         recipe: "1-2 cups orange juice or dairy-free milk + 2 bananas + 2 cups hulled strawberries, fresh or frozen + juice of 1 lime + 1 tablespoon honey + 1 tablespoon ground flaxseed",
@@ -23,6 +25,7 @@ let smoothies = [
         smoothie: "Peanut-butter chocolate smoothies",
         calories: 289,
         tag: "Dairy free",
+        price: `$${4.59}`,
         servings: 1,
         recipe: "2 ripe spotty bananas peeled + 2 tablespoons organic natural peanut butter + 1.5 tablespoon unsweetened cocoa powder + ½-1 cup unsweetened non-dairy milk + 1-2 tablespoon(s) pure maple syrup optional + 3-4 ice cubes",
         allergen: "Dairy milk",
@@ -31,6 +34,7 @@ let smoothies = [
     },
     {
         smoothie: "Orange Creamsicle smoothies",
+        price: `$${4.00}`,
         calories: 330,
         servings: 1,
         recipe: `3 oranges + 15 ounce lite milk + 1 teaspoon vanilla extract + 2 tablespoons honey, to taste \n Directions: Peel the oranges removing as much of the white pith as possible, segment the orange and place on a tray and freeze, when oranges are frozen to desire, blend all ingredients till they are smooth`,
@@ -41,6 +45,7 @@ let smoothies = [
     },
     {
         smoothie: "Banana-Peanut butter Smoothies",
+        price: `$${3.59}`,
         calories: 330,
         servings: 1,
         allergen: "Gluten",
@@ -54,12 +59,14 @@ let smoothies = [
         tag: "Gluten-free",
         servings: 1,
         allergen: "Gluten",
+        price: `$${2.99}`,
         id: 6,
         imgsrc: "images/smoothie1.png",
         recipe: "1 cup spinach + 1/2 cup water or dairy free milk of choice + 1 banana + 1 tbsp nut butter + 2 tbsp gluten free oats (optional) + 1 tbsp shredded coconut + 1/2 cup mango + 1/2 cup pineapple"
     },
     {
         smoothie: "Orange, Banana, and Flaxseed",
+        price: `$${4.19}`,
         calories:300,
         allergen: "Gluten",
         servings: 1,
@@ -72,6 +79,7 @@ let smoothies = [
         smoothie: "Coconut milk Strawberry banana smoothies",
         calories: 350,
         allergen: "Gluten",
+        price: `$${2.99}`,
         tag: "Gluten-free",
         servings: 1,
         permutation: "GL",
@@ -84,6 +92,7 @@ let smoothies = [
         ailment: "Ulcer",
         permutation: "GLU",
         tag: "Ulcer cushioning",
+        price: `$${2.99}`,
         id: 9,
         servings: 1,
         calories: 250,
@@ -95,6 +104,7 @@ let smoothies = [
         ailment: "Ulcer",
         calories: 290,
         id: 10,
+        price: `$${2.99}`,
         servings: 1,
         tag: "Ulcer cushioning",
         imgsrc: "images/smoothie4.png",
@@ -107,6 +117,7 @@ let smoothies = [
         tag: "Ulcer cushioning",
         permutation: "GLU",
         servings: 1,
+        price: `$${3.19}`,
         calories: 280,
         imgsrc: "images/smoothie1.png",
         recipe: "1 unripe potato + 1 green banana + 1-2 pieces of ginger + 1/2 glass of clean water (100ml) \n Instructions: Wash the potato, remove it's skin and cut  into several pieces. Blend it until you get potato juice. Then, cut the green banana into several pieces and add them to the pitcher along with the potato juice. Grind the ginger to a pulp and add it to the mix. Finally, add half a glass of wate to make it easier to liquefy and process, until everything is properly mixed."
@@ -115,6 +126,7 @@ let smoothies = [
         smoothie: "Diabetic-friendly chocolate smoothie",
         ailment: "Diabetes",
         tag: "Diabetic friendly",
+        price: `$${5.00}`,
         servings: 1,
         calories: 209,
         imgsrc: "images/smoothie5.png",
@@ -128,6 +140,7 @@ let smoothies = [
         servings: 1,
         permutation: "GLUD",
         calories: 189,
+        price: `$${3.49}`,
         imgsrc: "images/smoothie5.png",
         recipe: "30g of spinach + 1/4 avocado flesh scooped out + 1 medium sized green apple diced + 200ml of cold water + 1tbsp minced fresh ginger"
     },
@@ -136,6 +149,7 @@ let smoothies = [
         ailment: "Diabetes",
         tag: "Diabetic friendly",
         servings: 1,
+        price: `$${3.60}`,
         id: 13,
         calories: 133,
         imgsrc: "images/smoothie2.png",
@@ -149,6 +163,7 @@ let smoothies = [
         servings: 1,
         calories: 231,
         id: 14, 
+        price: `$${3.00}`,
         imgsrc: "images/smoothie5.png",
         recipe: "1 cup spinach + 2 tbsp fresh mint + 1 stalk celery chopped + 1/2 cup brewed green tea cooled + 1/2 grapefruit peeled and seeded + 1 cup pineapple frozen + 1/4 avocado + dash cayenne pepper optional + 1 serving Protein Smoothie Boost  optional"
     },
@@ -159,6 +174,7 @@ let smoothies = [
         servings: 1,
         calories: 250,
         id: 15,
+        price: `$${3.80}`,
         imgsrc: "images/smoothie5.png",
         recipe: "3/4 cup fresh spinach + 3/4 cup frozen pineapple + 1/2 banana, frozen (peel and freeze ahead of time) + 1 tablespoon coconut flakes (unsweetened, toasted works great too!) + 2 scoops collagen peptides powder (see product recommendations) + 1 tsp matcha green tea powder + Juice from 1/2 lime + 3/4 cup unsweetened almond milk"
     },
@@ -167,6 +183,7 @@ let smoothies = [
         imgsrc: "images/smoothie5.png",
         diet: "Weight loss",
         tag: "Weight loss smoothie",
+        price: `$${4.59}`,
         permutation: "GLUDW",
         calories: 279,
         id: 16,
@@ -191,9 +208,12 @@ let addToCart = (e) =>{
     let i = e.parentElement.id;
     let cartItems = JSON.parse(localStorage.getItem('Cart')) || [];
     if(!cartItems || cartItems.length === 0)localStorage.setItem("Cart", JSON.stringify(cartItems));
-    
-    cartItems.push(smoothies[i]);
-    localStorage.setItem("Cart", JSON.stringify(cartItems));
+    if(cartItems.some(element => element.id == i)){
+        smoothies.forEach(element => {if(element.id == i)alert(`${element.smoothie} has already been added to cart`)})
+    }else{
+        smoothies.forEach((element) => {if(element.id == i)cartItems.push(element)});
+        localStorage.setItem("Cart", JSON.stringify(cartItems));
+    }
 }
 collate_button.onclick = () =>{
     let determine = (added_arr, user_smoothies) =>{
@@ -241,7 +261,7 @@ collate_button.onclick = () =>{
             smoothie_shelf.innerHTML = "";
             user_smoothies.map((x) =>{
                 return(
-                    smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
+                    smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
                 )
             });
           
@@ -260,7 +280,14 @@ collate_button.onclick = () =>{
         let user_smoothies = [];
         // console.log(yessir)
         if(added_arr.length == 0){
-           alert("You have not made any preferences");
+           user_smoothies = smoothies;
+           let smoothie_shelf = document.querySelector(".smoothies");
+           smoothie_shelf.innerHTML = "";
+           user_smoothies.map((x) =>{
+               return(
+                   smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
+               )
+           });
         }
         else{
             setTimeout(determine, 4000, added_arr, user_smoothies);
@@ -301,7 +328,14 @@ collate_button.onclick = () =>{
             let added_arr = Array.from(document.querySelectorAll(".added"));
             let user_smoothies = [];
             if(added_arr.length === 0){
-                alert("You have not made any preferences");
+                user_smoothies = smoothies;
+                let smoothie_shelf = document.querySelector(".smoothies");
+                smoothie_shelf.innerHTML = "";
+                user_smoothies.map((x) =>{
+                    return(
+                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
+                    )
+                });
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
             }
@@ -333,7 +367,14 @@ collate_button.onclick = () =>{
             let added_arr = Array.from(document.querySelectorAll(".added"));
             let user_smoothies = [];
             if(added_arr.length === 0){
-                alert("You have not made any preferences");
+                user_smoothies = smoothies;
+                let smoothie_shelf = document.querySelector(".smoothies");
+                smoothie_shelf.innerHTML = "";
+                user_smoothies.map((x) =>{
+                    return(
+                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
+                    )
+                });
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies)
             }
@@ -365,7 +406,14 @@ collate_button.onclick = () =>{
             let added_arr = Array.from(document.querySelectorAll(".added"));
             let user_smoothies = [];
             if(added_arr.length === 0){
-                alert("You have not made any preferences");
+                user_smoothies = smoothies;
+                let smoothie_shelf = document.querySelector(".smoothies");
+                smoothie_shelf.innerHTML = "";
+                user_smoothies.map((x) =>{
+                    return(
+                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
+                    )
+                });
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
             }
@@ -396,7 +444,14 @@ collate_button.onclick = () =>{
             let added_arr = Array.from(document.querySelectorAll(".added"));
             let user_smoothies = [];
             if(added_arr.length === 0){
-                alert("You have not made any preferences");
+                user_smoothies = smoothies;
+                let smoothie_shelf = document.querySelector(".smoothies");
+                smoothie_shelf.innerHTML = "";
+                user_smoothies.map((x) =>{
+                    return(
+                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
+                    )
+                });
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies)
             }
@@ -427,7 +482,14 @@ collate_button.onclick = () =>{
             let added_arr = Array.from(document.querySelectorAll(".added"));
             let user_smoothies = [];
             if(added_arr.length === 0){
-                alert("You have not made any preference");
+                user_smoothies = smoothies;
+                let smoothie_shelf = document.querySelector(".smoothies");
+                smoothie_shelf.innerHTML = "";
+                user_smoothies.map((x) =>{
+                    return(
+                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
+                    )
+                });
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
             }
@@ -489,7 +551,14 @@ collate_button.onclick = () =>{
             let added_arr = Array.from(document.querySelectorAll(".added"));
             let user_smoothies = [];
             if(added_arr.length === 0){
-                alert("You have not made any preferences");
+                user_smoothies = smoothies;
+                let smoothie_shelf = document.querySelector(".smoothies");
+                smoothie_shelf.innerHTML = "";
+                user_smoothies.map((x) =>{
+                    return(
+                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
+                    )
+                });
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
             }
@@ -499,7 +568,14 @@ collate_button.onclick = () =>{
             let added_arr = Array.from(document.querySelectorAll(".added"));
             let user_smoothies = [];
             if(added_arr.length === 0){
-               alert("You have not made any preferences");
+                user_smoothies = smoothies;
+                let smoothie_shelf = document.querySelector(".smoothies");
+                smoothie_shelf.innerHTML = "";
+                user_smoothies.map((x) => {
+                    return (
+                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
+                    )
+                });
             }else{
                setTimeout(determine, 3000, added_arr, user_smoothies);
             }

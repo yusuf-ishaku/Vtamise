@@ -18,6 +18,9 @@
     --smaller-font: 1rem;
     --smallest-font: 0.8rem
 }
+::selection{
+    background-color: rgba(5, 230, 5, 0.499);
+}
 *{
     margin: 0;
     padding: 0;
@@ -162,6 +165,33 @@ main::-webkit-scrollbar-thumb:active{
     font-weight: lighter;
     font-size: 1.3rem;
 }
+p.price{
+    width: 100%;
+    margin-top: 5px;
+    text-align: center !important;
+    font-weight: 500;
+    font-size: var(--small-font);
+}
+.number-circle{
+    position: fixed;
+    left: 14rem;
+    font-size: 14px;
+    display: block;
+    width: fit-content;
+    max-width: 1rem;
+    padding: 0.8rem;
+    height: 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white ;
+}
+.active > .number-circle{
+    background-color: white;
+    color: green;
+}
 .heading{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -261,11 +291,14 @@ main::-webkit-scrollbar-thumb:active{
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto auto ;
     gap: 0.5rem;
+    row-gap: 1rem;
 }
 .item{
     width: 14rem;
     height: 22rem;
-    background-color: red;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: var(--box-shadow-1);
 }
 .right-aside{
     width: auto;
@@ -875,7 +908,9 @@ span.x{
     display: none;
 }
 .crt-is{
+    margin-top: 1rem;
     display: grid;
+    row-gap: 1rem;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto auto auto auto auto ;
 }
