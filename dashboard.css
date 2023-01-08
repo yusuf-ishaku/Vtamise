@@ -73,7 +73,7 @@ main::-webkit-scrollbar-thumb:hover{
 main::-webkit-scrollbar-thumb:active{
     background-color: rgb(88, 88, 88);
 }
-.container{
+.container-full{
     position: fixed;
     display: grid;
     width: 100%;
@@ -425,7 +425,7 @@ p.price{
     display: none;
 }
 @media screen and (max-width: 992px) {
-    .container {
+    .container-full {
         position: fixed;
         top: 10vh;
         bottom: 0;
