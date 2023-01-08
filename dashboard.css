@@ -985,3 +985,41 @@ span.x{
         padding-bottom: 3rem;
     }   
 }
+@media  screen and (max-width: 768px) and (min-width: 525px){
+    .smoothies{
+        display: grid ;
+        grid-template-columns: auto auto;
+    }
+    .smoothies > .smoothie{
+        width: 15rem;
+    }
+    .crt-is{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 524px){
+    .smoothies{
+        display: grid ;
+        grid-template-columns: auto;
+        justify-content: center;
+        row-gap: 1.8rem;
+    }
+    .smoothies > .smoothie{
+        width: 18rem;
+    }
+    .crt-is{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .crt-is > .smoothie{
+        width: 20rem;
+        height: 20rem;
+    }
+    .smoothies > .smoothie, .crt-is > .smoothie{
+        margin: auto;
+    }
+}

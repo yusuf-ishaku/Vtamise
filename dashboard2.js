@@ -126,7 +126,7 @@ let smoothies = [
         smoothie: "Diabetic-friendly chocolate smoothie",
         ailment: "Diabetes",
         tag: "Diabetic friendly",
-        price: `$${5.00}`,
+        price: `$${5.09}`,
         servings: 1,
         calories: 209,
         imgsrc: "images/smoothie5.png",
