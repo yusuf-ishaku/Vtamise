@@ -56,6 +56,9 @@ let juliacount = document.querySelector("#juliaCount");
 let modalpack = document.querySelector(".modal-pack");
 juliacount.onclick = () =>{
     modal.style.display = "block";
+    let jParent = modalpack.parentElement;
+    let jParentHeight = jParent.parentElement.clientHeight;
+    modal.style.height = `${jParentHeight}px `;
     setTimeout(()=>{
         modalpack.style.transform = "translateY(0rem)";
         modalpack.style.transition = "transform 300ms ease-in"

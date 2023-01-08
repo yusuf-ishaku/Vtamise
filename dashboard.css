@@ -992,6 +992,7 @@ span.x{
     }
     .smoothies > .smoothie{
         width: 15rem;
+        height: 22rem;
     }
     .crt-is{
         display: grid;
@@ -1008,6 +1009,7 @@ span.x{
     }
     .smoothies > .smoothie{
         width: 18rem;
+        height: 22rem;
     }
     .crt-is{
         display: grid;
@@ -1017,9 +1019,77 @@ span.x{
     }
     .crt-is > .smoothie{
         width: 20rem;
-        height: 20rem;
+        height: 22rem;
     }
     .smoothies > .smoothie, .crt-is > .smoothie{
         margin: auto;
+    }
+}
+@media screen and (max-width: 1366px) and (min-width: 1162px){
+    .container-full{
+        gap: 0;
+    }
+    .shopping{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        column-gap: 0.5rem;
+    }
+    .shopping > .item{
+        width: 17rem;
+    }
+    .main{
+        margin-right: 0.6rem !important;
+    }
+}
+@media screen and (max-width: 1161px) and (min-width: 1034px){
+    .container-full{
+        gap: 0;
+    }
+    .shopping{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        column-gap: 0.5rem;
+    }
+    .shopping > .item{
+        width: 14rem;
+    }
+    .main{
+        margin-right: 0.6rem !important;
+    }
+}
+@media screen and (max-width: 1033px) and (min-width: 998px){
+    .container-full{
+        gap: 0;
+    }
+    .shopping{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        column-gap: 0.5rem;
+    }
+    .shopping > .item{
+        width: 17rem;
+    }
+    .main{
+        margin-right: 0.6rem !important;
+    }
+}
+
+@media screen and (max-width: 609px){
+    .shopping{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 1.4rem;
+    }
+    .shopping > .item{
+        width: 17rem;
+    }
+}
+@media screen  and (max-width:309px){
+    .shopping > .item{
+        width: 14rem;
     }
 }
