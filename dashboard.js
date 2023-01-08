@@ -39,6 +39,14 @@ toggle.addEventListener("click", () =>{
         sideBar.style.transform = "translateX(-24rem)";
         toggle.setAttribute("data-visible", "false")
     }
+});
+
+withdraw.addEventListener("click", () =>{
+    let value = toggle.getAttribute("data-visible");
+    if(value === "true"){
+        sideBar.style.transform = "translateX(-24rem)"
+        toggle.setAttribute("data-visible", "false")
+    }
 })
 // Sidebar code ends here
 
