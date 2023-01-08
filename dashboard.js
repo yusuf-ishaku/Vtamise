@@ -10,6 +10,7 @@
 // setInterval(jamil, 1);
 let toggle = document.getElementById("toggler");
 let sideBar = document.querySelector(".aside");
+let withdraw = document.querySelector(".return-square");
 window.onclick = function(event){
     if(event.target == sideBar){
         console.log("Y")
@@ -26,9 +27,15 @@ setInterval(jamil, 10)
 toggle.addEventListener("click", () =>{
     let value = toggle.getAttribute("data-visible");
     if(value === "false"){
+        if(!withdraw.classList.contains("return-squarespell")){
+            withdraw.classList.add("return-squarespell");
+        }
         sideBar.style.transform = "translateX(0rem)";
         toggle.setAttribute("data-visible", "true");
     }else if(value === "true"){
+        if(withdraw.classList.contains("return-squarespell")){
+            withdraw.classList.remove("return-squarespell");
+        }
         sideBar.style.transform = "translateX(-24rem)";
         toggle.setAttribute("data-visible", "false")
     }
