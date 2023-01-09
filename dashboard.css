@@ -1010,12 +1010,17 @@ span.x{
     font-size: var(--small-font);
 }
 .sector-model{
+    display: none;
+    z-index: 9999;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 0, 0, 0.706);
+    background-color: rgba(26, 25, 25, 0.547);
     position: absolute;
     top: 0;
     bottom: 0;
+}
+.sector-model-revealed{
+    display: block;
 }
 @media screen and (max-width:992px){
     .main-part{
