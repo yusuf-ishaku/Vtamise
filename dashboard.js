@@ -58,7 +58,8 @@ juliacount.onclick = () =>{
     modal.style.display = "block";
     let jParent = modalpack.parentElement;
     let jParentHeight = jParent.parentElement.clientHeight;
-    modal.style.height = `${jParentHeight}px `;
+    let main = document.querySelector(".main");
+    main.style.overflow = "hidden";
     setTimeout(()=>{
         modalpack.style.transform = "translateY(0rem)";
         modalpack.style.transition = "transform 300ms ease-in"
@@ -69,6 +70,8 @@ window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
       modalpack.style.transform = "translateY(30rem)"
+      let main = document.querySelector(".main");
+      main.style.overflow = "scroll"
     }
   }
 // Modal code ends here

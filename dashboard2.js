@@ -285,6 +285,8 @@ collate_button.onclick = () =>{
             let modal = document.querySelector(".modal");
             modal.style.display = "none";
             modalpack.style.transform = "translateY(30rem)";
+            let main = document.querySelector(".main");
+            main.style.overflow = "scroll"
     }
     let age_value = age.value;
     if(yessir && age_value === ""){
