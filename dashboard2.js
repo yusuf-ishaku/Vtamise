@@ -111,6 +111,17 @@ let smoothies = [
         recipe : "Properly wash all the fruits and place them on a very clean surface. Position your clean juicer on the table and place the cabbage in the juicer. “The juicer helps separate the cabbage fiber from the cabbage juice and we get to have the cabbage juice collected. \n The apple and a half is also placed in the juicer there after as well as the ginger and the celery. The juices from all are collected and the mixture is your smoothie."
     },
     {
+        smoothie: "Cabbage, apple, ginger, celery ulcer burning",
+        ailment: "Ulcer",
+        calories: 290,
+        id: 10,
+        price: `$${2.99}`,
+        servings: 1,
+        tag: "Ulcer cushioning",
+        imgsrc: "images/smoothie4.png",
+        recipe : "Properly wash all the fruits and place them on a very clean surface. Position your clean juicer on the table and place the cabbage in the juicer. “The juicer helps separate the cabbage fiber from the cabbage juice and we get to have the cabbage juice collected. \n The apple and a half is also placed in the juicer there after as well as the ginger and the celery. The juices from all are collected and the mixture is your smoothie."
+    },
+    {
         smoothie: "Banana-potato-ginger smoothie",
         ailment: "Ulcer",
         id: 11,
@@ -257,6 +268,8 @@ collate_button.onclick = () =>{
             }
             console.log(user_smoothies);
             let mapper = document.querySelector(".suggested_smoothies");
+            let run = document.querySelector(".run");
+            run.style.display = "none"
             let smoothie_shelf = mapper.querySelector(".smoothies");
             smoothie_shelf.innerHTML = "";
             user_smoothies.map((x) =>{
@@ -296,11 +309,11 @@ collate_button.onclick = () =>{
     }    
     // console.log(age_value);
     if(age_value === "" && !yessir){
-        console.log("Please put in age");
+        // console.log("Please put in age");
         re_input.style.display = "block";
     }
     else if(age_value !== "" && (age_value < 2 || age_value > 150)){
-        console.log("no age exists")
+        alert("Age is out of range!")
     }else if((age_value !== "" && yessir) || (age_value !== "" && !yessir)){
         if(age_value >= 2 && age_value <= 3){
             let calorie_per_day = (1000 + 1400)/2;
@@ -329,13 +342,7 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                let smoothie_shelf = document.querySelector(".smoothies");
-                smoothie_shelf.innerHTML = "";
-                user_smoothies.map((x) =>{
-                    return(
-                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
-                    )
-                });
+                setTimeout(determine, 3000, added_arr, user_smoothies)
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
             }
@@ -368,13 +375,7 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                let smoothie_shelf = document.querySelector(".smoothies");
-                smoothie_shelf.innerHTML = "";
-                user_smoothies.map((x) =>{
-                    return(
-                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
-                    )
-                });
+                setTimeout(determine, 3000, added_arr, user_smoothies)
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies)
             }
@@ -407,13 +408,7 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                let smoothie_shelf = document.querySelector(".smoothies");
-                smoothie_shelf.innerHTML = "";
-                user_smoothies.map((x) =>{
-                    return(
-                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
-                    )
-                });
+                setTimeout(determine, 3000, added_arr, user_smoothies)
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
             }
@@ -445,13 +440,7 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                let smoothie_shelf = document.querySelector(".smoothies");
-                smoothie_shelf.innerHTML = "";
-                user_smoothies.map((x) =>{
-                    return(
-                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
-                    )
-                });
+                setTimeout(determine, 3000, added_arr, user_smoothies)
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies)
             }
@@ -483,13 +472,7 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                let smoothie_shelf = document.querySelector(".smoothies");
-                smoothie_shelf.innerHTML = "";
-                user_smoothies.map((x) =>{
-                    return(
-                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
-                    )
-                });
+                setTimeout(determine,3000, added_arr, user_smoothies)
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
             }
@@ -520,7 +503,8 @@ collate_button.onclick = () =>{
             let added_arr = Array.from(document.querySelectorAll(".added"));
             let user_smoothies = [];
             if(added_arr.length === 0){
-                alert("You have not made any preferences");
+                user_smoothies = smoothies;
+                setTimeout(determine, 3000, added_arr, user_smoothies)
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies)
             }
@@ -552,13 +536,7 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                let smoothie_shelf = document.querySelector(".smoothies");
-                smoothie_shelf.innerHTML = "";
-                user_smoothies.map((x) =>{
-                    return(
-                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
-                    )
-                });
+                setTimeout(determine, 3000, added_arr, user_smoothies)
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
             }
@@ -569,13 +547,7 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                let smoothie_shelf = document.querySelector(".smoothies");
-                smoothie_shelf.innerHTML = "";
-                user_smoothies.map((x) => {
-                    return (
-                        smoothie_shelf.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src=${x.imgsrc} alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="add_to_cart" onclick = "addToCart(this)">Add to cart</button></div>`
-                    )
-                });
+                setTimeout(determine, 3000, added_arr, user_smoothies)
             }else{
                setTimeout(determine, 3000, added_arr, user_smoothies);
             }

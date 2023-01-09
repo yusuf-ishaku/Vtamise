@@ -97,7 +97,7 @@ main::-webkit-scrollbar-thumb:active{
     margin-left: auto;
 }
 .aside{
-    z-index: 9999;
+    z-index: 9000;
     background-color: var(--color-background);
     width: auto;
     min-width: 14rem;
@@ -181,15 +181,15 @@ p.price{
     font-size: 14px;
     display: block;
     width: fit-content;
-    max-width: 1rem;
-    padding: 0.8rem;
+    max-width: 1.4rem;
+    padding: 0.9rem;
     height: 1rem;
     display:flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background-color: red;
-    color: white ;
+    color: white;
 }
 .active > .number-circle{
     background-color: white;
@@ -674,6 +674,15 @@ p.price{
     justify-content: center;
     align-items: center;
 }
+.run{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 10rem;
+    border: 1px dashed black;
+}
 .button1, .button2{
     height: 1.8rem;
     width: 75%;
@@ -933,6 +942,7 @@ span.x{
     display: inline-block;
     margin-left: 0.5rem;
 }
+
 /* For the cart page */
 .cart{
     display: none;
@@ -1027,16 +1037,16 @@ span.x{
 }
 @media screen and (max-width: 1366px) and (min-width: 1162px){
     .container-full{
-        gap: 0;
+        gap: 1rem;
     }
     .shopping{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         justify-content: center;
         column-gap: 0.5rem;
     }
     .shopping > .item{
-        width: 17rem;
+        width: 15rem;
     }
     .main{
         margin-right: 0.6rem !important;
