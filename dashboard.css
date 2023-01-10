@@ -84,7 +84,6 @@ main::-webkit-scrollbar-thumb:active{
 .navigator{
     width: 50px;
     height: 90%;
-    margin-left: 75vw;
     background-color: black;
     cursor: pointer;
     z-index: 9999;
@@ -335,7 +334,7 @@ p.price{
     background-color: var(--color-green);
 }
 .aside{
-    box-shadow: 1rem 0.2rem 1rem rgb(205, 205, 205);
+    box-shadow: 0.5rem 0.2rem 1rem rgb(205, 205, 205);
 }
 .right-aside{
     box-shadow: var(--box-shadow-2);
@@ -396,6 +395,35 @@ p.price{
     padding: 0;
     transition: background-color 200ms ease-in;
     cursor: pointer;
+}
+.checkout-crt{
+    width: 90%;
+    height: 2.2rem;
+    align-self: flex-end;
+    font-size: 1.2rem;
+    background-color:rgb(4, 180, 4);
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    padding: 0;
+    transition: background-color 200ms ease-in;
+    cursor: pointer;
+}
+.checkout-crt:hover{
+    background-color: rgb(180, 177, 4);
+}
+.checkout-crt:active{
+    background-color: rgb(255, 255, 0);
+    color: rgb(61, 60, 60);
+}
+.checkout-btn{
+    width: auto;
+    height: fit-content;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
 }
 .checkout{
     width: 100%;
@@ -476,6 +504,7 @@ p.price{
         transform: translateX(-24rem);
         transition: transform 500ms;
         z-index: 9999;
+        box-shadow: none;
     }
     .return-squarespell{
         display: flex;
@@ -987,7 +1016,7 @@ span.x{
 }
 .no-item{
     width: 100%;
-    height: 30rem;
+    height: 50vh;
     border: 1px dashed black;
     display: flex;
     flex-direction: column;
@@ -1012,12 +1041,35 @@ span.x{
 .sector-model{
     display: none;
     z-index: 9999;
+    overflow-x: scroll;
     width: 100%;
     height: 100vh;
     background-color: rgba(26, 25, 25, 0.547);
-    position: absolute;
+    position: sticky;
     top: 0;
     bottom: 0;
+}
+.sector-model::-webkit-scrollbar{
+    width: 6px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+.sector-model::-webkit-scrollbar-button{
+    display: none;
+}
+.sector-model::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.184);
+    width: 6px !important;
+    border-radius: 4px;
+}
+.desc-square{
+    width: 75%;
+    height: 75vh;
+    background-color: wheat;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0.5rem 1rem rgba(70, 69, 69, 0.512);
 }
 .sector-model-revealed{
     display: block;
