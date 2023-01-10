@@ -40,7 +40,7 @@ let checkOut = (e) =>{
             if(element.id == it){
                 console.log(element);
                 checkOutDesc.innerHTML = "";
-                checkOutDesc.innerHTML = `You are about to buy ${element.servings.toFixed(1)} servings of ${element.smoothie} for $${(element.price * element.servings).toFixed(2)}`
+                checkOutDesc.innerHTML = `<div>You are about to buy ${element.servings.toFixed(1)} servings of ${element.smoothie} for $${(element.price * element.servings).toFixed(2)}</div>`
             }
         });
     }
