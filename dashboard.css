@@ -191,8 +191,11 @@ p.price{
     color: white;
 }
 .active > .number-circle{
-    background-color: white;
-    color: green;
+    background-color: transparent;
+    color: white;
+    border-radius: 0%;
+    font-size: 16px;
+    border-bottom: 3px solid black;
 }
 .heading{
     display: grid;
@@ -452,7 +455,7 @@ p.price{
     border: 1px solid black;
     color: black;
 }
-.add_to_cart:active, .checkout:active{
+.add_to_cart:active{
     background-color: black;
     color: white;
 }
@@ -1066,7 +1069,7 @@ span.x{
 .desc-square{
     width: 75%;
     height: 75vh;
-    background-color: wheat;
+    background-color: white;
     margin: auto;
     margin-top: 5rem;
     margin-bottom: 3rem;
@@ -1079,12 +1082,13 @@ span.x{
 }
 .imgsrcimage{
     width: inherit;
+    object-fit: cover;
 }
 .chkt-text{
     font-weight: lighter;
 }
 .chkt-image{
-    width: 16rem;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -1093,10 +1097,30 @@ span.x{
 }
 .checkout-inner{
     width: 100%;
-    height: fit-content;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.chkt-UI{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    padding-left: 0;
+}
+.code{
+    font-family: auto;
+    align-self: flex-end;
+    font-size: 12px;
+}
+.single{
+    width: 100%;
+    background-color: var(--color-green);
+    border: 0;
+    color: white;
+    height: 2rem;
+    border-radius: 5px;
+    margin: 0.3rem;
 }
 @media screen and (max-width:992px){
     .main-part{

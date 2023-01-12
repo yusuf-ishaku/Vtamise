@@ -1,3 +1,4 @@
+let corigo = true;
 let displayCart = () =>{
 let cartItems = JSON.parse(localStorage.getItem("Cart"));
 let numberCircle = document.querySelector(".number-circle");
@@ -22,7 +23,56 @@ if(!cartItems){
 }
 }
 setInterval(displayCart, 1100);
+let servingvalue;
 // setInterval(displayCart,100, cartItems, no_item);
+let buy = (e) =>{
+    if(e.innerText === "Order Single Serve"){
+        e.innerText = "Order Required Servings";
+        let target = e.id;
+        cartItems.forEach(element => {
+            if(element.id == target){
+                servingvalue = element.servings;
+                checkOutDesc.innerHTML = "";
+                checkOutDesc.innerHTML = `
+                <div class="checkout-inner">
+                    <div class="chkt-image">
+                        <img class="imgsrcimage" src="${element.imgsrc}" alt=""/>
+                    </div>
+                    <div class="chkt-UI">
+                        <div>
+                            <h4 class="chkt-text">You are about to order ${1} servings of ${element.smoothie} for $${(element.price * 1).toFixed(2)}</h4>
+                            <div><button id=${element.id} class="single" onclick="buy(this)">${e.innerText}</class></div>
+                        </div>
+                        <code class="code">Powered by CwivelPack(c)2023</code>
+                    </div>
+                </div>`
+            }});
+        
+    }
+    else if(e.innerText === "Order Required Servings"){
+        e.innerText = "Order Single Serve";
+        let target = e.id;
+        corigo = true;
+        cartItems.forEach(element => {
+            if(element.id == target){
+                element.servings = servingvalue;
+                checkOutDesc.innerHTML = "";
+                checkOutDesc.innerHTML = `
+                <div class="checkout-inner">
+                    <div class="chkt-image">
+                        <img class="imgsrcimage" src="${element.imgsrc}" alt=""/>
+                    </div>
+                    <div class="chkt-UI">
+                        <div>
+                            <h4 class="chkt-text">You are about to order ${element.servings.toFixed(1)} servings of ${element.smoothie} for $${(element.price * element.servings).toFixed(2)}</h4>
+                            <div><button id=${element.id} class="single" onclick="buy(this)">${e.innerText}</class></div>
+                        </div>
+                        <code class="code">Powered by CwivelPack(c)2023</code>
+                    </div>
+                </div>`
+            }});
+    }
+}
 let check_out = document.querySelector(".checkout");
 let check_out_box = document.querySelector('.sector-model');
 let checkOutDesc = document.querySelector(".desc-square");
@@ -32,20 +82,26 @@ let checkOut = (e) =>{
     cartItems = JSON.parse(localStorage.getItem("Cart"))
     if(check_out_box.classList.contains("sector-model-revealed")){
         check_out_box.classList.remove("sector-model-revealed");
-        main.style.overflow = "scroll"
+        main.style.overflow = "scroll";
     }else{
         check_out_box.classList.add("sector-model-revealed");
         main.style.overflow = "hidden";
         cartItems.forEach(element => {
             if(element.id == it){
-                console.log(element);
+                // console.log(element);
                 checkOutDesc.innerHTML = "";
                 checkOutDesc.innerHTML = `
                 <div class="checkout-inner">
                     <div class="chkt-image">
                         <img class="imgsrcimage" src="${element.imgsrc}" alt=""/>
                     </div>
-                    <h4 class="chkt-text">You are about to buy ${element.servings.toFixed(1)} servings of ${element.smoothie} for $${(element.price * element.servings).toFixed(2)}</h4>
+                    <div class="chkt-UI">
+                        <div>
+                            <h4 class="chkt-text">You are about to order ${corigo? element.servings.toFixed(1): 1} servings of ${element.smoothie} for $${(element.price * element.servings).toFixed(2)}</h4>
+                            <div><button id=${element.id} class="single" onclick="buy(this)">Order Single Serve</class></div>
+                        </div>
+                        <code class="code">Powered by CwivelPack(c)2023</code>
+                    </div>
                 </div>`
             }
         });
