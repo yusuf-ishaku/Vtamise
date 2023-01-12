@@ -16,7 +16,7 @@ if(!cartItems){
     cart.innerHTML = "";
     cartItems.map((x) =>{
         return(
-           cart.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src= "${x.imgsrc}" alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">${x.price}</p></div><button class="checkout" onclick = "checkOut(this)">Checkout</button></div>`
+           cart.innerHTML += `<div class="smoothie" id=${x.id}> <div class="smoothie_image"><img class="smoothie-img" src= "${x.imgsrc}" alt=""></div><div class="smoothie-text"><h3>${x.smoothie}</h3><p class="servings">${x.servings.toFixed(2)} Servings (for calories needed)</p><p class= "price">$${x.price}</p></div><button class="checkout" onclick = "checkOut(this)">Checkout</button></div>`
         )
     });
 }
@@ -40,7 +40,13 @@ let checkOut = (e) =>{
             if(element.id == it){
                 console.log(element);
                 checkOutDesc.innerHTML = "";
-                checkOutDesc.innerHTML = `<div>You are about to buy ${element.servings.toFixed(1)} servings of ${element.smoothie} for $${(element.price * element.servings).toFixed(2)}</div>`
+                checkOutDesc.innerHTML = `
+                <div class="checkout-inner">
+                    <div class="chkt-image">
+                        <img class="imgsrcimage" src="${element.imgsrc}" alt=""/>
+                    </div>
+                    <h4 class="chkt-text">You are about to buy ${element.servings.toFixed(1)} servings of ${element.smoothie} for $${(element.price * element.servings).toFixed(2)}</h4>
+                </div>`
             }
         });
     }

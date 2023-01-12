@@ -1048,6 +1048,7 @@ span.x{
     position: sticky;
     top: 0;
     bottom: 0;
+    
 }
 .sector-model::-webkit-scrollbar{
     width: 6px;
@@ -1070,9 +1071,32 @@ span.x{
     margin-top: 5rem;
     margin-bottom: 3rem;
     box-shadow: 0 0.5rem 1rem rgba(70, 69, 69, 0.512);
+    border-radius: 5px;
+    padding: 0.8rem 0.8rem;
 }
 .sector-model-revealed{
     display: block;
+}
+.imgsrcimage{
+    width: inherit;
+}
+.chkt-text{
+    font-weight: lighter;
+}
+.chkt-image{
+    width: 16rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+.checkout-inner{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (max-width:992px){
     .main-part{
