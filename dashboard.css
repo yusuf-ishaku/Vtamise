@@ -1068,7 +1068,7 @@ span.x{
 }
 .desc-square{
     width: 75%;
-    height: 75vh;
+    height: fit-content;
     background-color: white;
     margin: auto;
     margin-top: 5rem;
@@ -1081,14 +1081,14 @@ span.x{
     display: block;
 }
 .imgsrcimage{
-    width: inherit;
-    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
 }
 .chkt-text{
     font-weight: lighter;
 }
 .chkt-image{
-    width: 100%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -1112,6 +1112,16 @@ span.x{
     font-family: auto;
     align-self: flex-end;
     font-size: 12px;
+    margin: 0.3rem;
+}
+.receipt > ul{
+    list-style-type: none;
+}
+.order-list{
+    
+    width: 100%;
+    height: auto;
+    padding: 0.3rem;
 }
 .single{
     width: 100%;
@@ -1121,6 +1131,31 @@ span.x{
     height: 2rem;
     border-radius: 5px;
     margin: 0.3rem;
+    cursor: pointer;
+}
+.receipt{
+    width: 100%;
+    background-color: rgb(246, 255, 194);
+    height: 70%;
+    margin: 0.3rem;
+}
+.order-list > span{
+    display: inline-block;
+}
+span.chkt-item{
+    width: 85%;
+    text-align: center;
+}
+span.item-price{
+    width: 15%;
+    text-align: center;
+}
+span.smoothie-item{
+    width: 85%;
+}
+span.smoothie-price{
+    width: 15%;
+    text-align: justify;
 }
 @media screen and (max-width:992px){
     .main-part{

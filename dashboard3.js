@@ -43,7 +43,15 @@ let buy = (e) =>{
                             <h4 class="chkt-text">You are about to order ${1} servings of ${element.smoothie} for $${(element.price * 1).toFixed(2)}</h4>
                             <div><button id=${element.id} class="single" onclick="buy(this)">${e.innerText}</class></div>
                         </div>
-                        <code class="code">Powered by CwivelPack(c)2023</code>
+                        <div class="receipt">
+                            <ul>
+                             <li class="order-list"><span class="chkt-item">Item</span><span class="item-price">Price</span></li>
+                             <li class="order-list"><span class="smoothie-item">${element.smoothie}-single(x${1})</span><span class="smoothie-price">$${1 * element.price}</span></li>
+                             <li class="order-list"><span class="smoothie-item">Transport to {user predestined position}</span><span class = "smoothie-price">$${1}</span></li>
+                             <li class="order-list"><span class="smoothie-item">Total cost</span><span class = "smoothie-price">$${1 + (1 * element.price)}</span></li>
+                            </ul>
+                        </div>
+                        <h4 class="code">Powered by CwivelPack(c)2023</h4>
                     </div>
                 </div>`
             }});
@@ -66,6 +74,14 @@ let buy = (e) =>{
                         <div>
                             <h4 class="chkt-text">You are about to order ${element.servings.toFixed(1)} servings of ${element.smoothie} for $${(element.price * element.servings).toFixed(2)}</h4>
                             <div><button id=${element.id} class="single" onclick="buy(this)">${e.innerText}</class></div>
+                        </div>
+                        <div class="receipt">
+                            <ul>
+                               <li class="order-list"><span class="chkt-item">Item</span><span class="item-price">Price</span></li>
+                              <li class="order-list"><span class="smoothie-item">${element.smoothie}-required(x${1})</span><span class="smoothie-price">$${(element.price * element.servings).toFixed(2)}</span></li>
+                              <li class="order-list"><span class="smoothie-item">Transport to {user predestined position}</span><span class = "smoothie-price">$${1}</span></li>
+                              <li class="order-list"><span class="smoothie-item">Total cost</span><span class = "smoothie-price">$${(1 + (element.servings * element.price)).toFixed(2)}</span></li>
+                            </ul>
                         </div>
                         <code class="code">Powered by CwivelPack(c)2023</code>
                     </div>
@@ -99,6 +115,14 @@ let checkOut = (e) =>{
                         <div>
                             <h4 class="chkt-text">You are about to order ${corigo? element.servings.toFixed(1): 1} servings of ${element.smoothie} for $${(element.price * element.servings).toFixed(2)}</h4>
                             <div><button id=${element.id} class="single" onclick="buy(this)">Order Single Serve</class></div>
+                        </div>
+                        <div class="receipt">
+                            <ul>
+                                <li class="order-list"><span class="chkt-item">Item</span><span class="item-price">Price</span></li>
+                                <li class="order-list"><span class="smoothie-item">${element.smoothie}-required(x${1})</span><span class="smoothie-price">$${(element.price * element.servings).toFixed(2)}</span></li>
+                                <li class="order-list"><span class="smoothie-item">Transport to {user predestined position}</span><span class = "smoothie-price">$${1}</span></li>
+                                <li class="order-list"><span class="smoothie-item">Total cost</span><span class = "smoothie-price">$${(1 + (element.servings * element.price)).toFixed(2)}</span></li>
+                            </ul>
                         </div>
                         <code class="code">Powered by CwivelPack(c)2023</code>
                     </div>
