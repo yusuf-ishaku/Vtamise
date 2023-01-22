@@ -346,7 +346,7 @@ p.price{
     width: fit-content;
 }
 .right-aside2{
-    display: none;
+    display: none !important;
 }
 .underbar{
     display: flex;
@@ -1156,6 +1156,33 @@ span.smoothie-item{
 span.smoothie-price{
     width: 15%;
     text-align: justify;
+}
+span.mojito{
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    border: 6px solid rgb(220, 228, 242);
+    border-top-color: rgb(0, 0, 255) ;
+    border-radius: 50%;
+    background-color: white;
+    animation: goround 2s infinite;
+}
+@keyframes goround {
+    0%{
+        transform: rotate(0deg);
+    }
+    /* 25%{
+        transform: rotate(90deg);
+    } */
+    /* 50%{
+        transform: rotate(180deg);
+    } */
+    /* 75%{
+        transform: rotate(270deg);
+    } */
+    100%{
+        transform: rotate(360deg);
+    }
 }
 @media screen and (max-width:992px){
     .main-part{

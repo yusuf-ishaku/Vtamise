@@ -66,7 +66,8 @@ juliacount.onclick = () =>{
     }, 50)
  
 }
-window.onclick = function(event) {
+window.onclick = (event) => {
+    console.log("hads")
     if (event.target == modal) {
       modal.style.display = "none";
       modalpack.style.transform = "translateY(30rem)"

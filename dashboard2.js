@@ -227,6 +227,12 @@ let addToCart = (e) =>{
     }
 }
 collate_button.onclick = () =>{
+    let moral = () =>{
+        let collate = document.querySelector(".collater");
+        let loading = document.querySelector(".mojito");
+        loading.classList.remove("right-aside2");
+        collate.classList.add('right-aside2');
+    }
     let determine = (added_arr, user_smoothies) =>{
         if((added_arr.some(element => element.innerText === "Dairy milk")) || added_arr.some(element => element.innerText === "Lactose intolerance")){
             user_smoothies = user_smoothies.concat(smoothies.filter(element => element.allergen === "Dairy milk"));
@@ -279,14 +285,14 @@ collate_button.onclick = () =>{
             });
           
             added_arr.forEach(element => element.classList.remove("added"));
-            let selections = document.querySelector(".selections")
+            let selections = document.querySelector(".selections");
             selections.innerHTML = "";
             let modalpack = document.querySelector(".modal-pack");
             let modal = document.querySelector(".modal");
             modal.style.display = "none";
             modalpack.style.transform = "translateY(30rem)";
             let main = document.querySelector(".main");
-            main.style.overflow = "scroll"
+            main.style.overflow = "scroll";
     }
     let age_value = age.value;
     if(yessir && age_value === ""){
@@ -305,6 +311,7 @@ collate_button.onclick = () =>{
            });
         }
         else{
+            moral;
             setTimeout(determine, 4000, added_arr, user_smoothies);
         }
         
