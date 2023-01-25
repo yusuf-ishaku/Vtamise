@@ -146,6 +146,17 @@ cartbtn.addEventListener("click", () =>{
     })
 });
 // chatapp
+let chat = document.querySelector('.chatapp');
+let chatappbtn = document.querySelector(".chatappbtn");
+chatappbtn.addEventListener("click", () =>{
+    // console.log(chat)
+    chat.classList.add("showing");
+    pages.forEach(page =>{
+        if(page !== chat){
+            page.classList.remove("showing");
+        }
+    })
+})
 
 // Different pages code ends here
 // let checkbox = document.querySelectorAll(".checkbox");
