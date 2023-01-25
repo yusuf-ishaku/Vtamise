@@ -138,3 +138,6 @@ window.onclick = function(event) {
       main.style.overflow = "scroll"
     }
   }
+
+
+// Display loader

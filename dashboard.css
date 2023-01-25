@@ -19,7 +19,7 @@
     --smallest-font: 0.8rem
 }
 ::selection{
-    background-color: rgba(5, 230, 5, 0.499);
+    background-color: rgba(5, 230, 5, 0.184);
 }
 *{
     margin: 0;
@@ -1157,15 +1157,31 @@ span.smoothie-price{
     width: 15%;
     text-align: justify;
 }
+.aside-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+span.modal-close{
+    display: block;
+    width: fit-content;
+    padding: 0.5rem;
+    padding-right: 1.5rem;
+    cursor: pointer;
+}
+span.paragraph{
+    display: block;
+}
 span.mojito{
     display: inline-block;
     width: 33px;
     height: 33px;
     border: 6px solid rgb(220, 228, 242);
-    border-top-color: rgb(0, 0, 255) ;
+    border-left-color: rgb(0, 0, 255) ;
     border-radius: 50%;
     background-color: white;
-    animation: goround 2s infinite;
+    animation: goround 1.5s infinite;
 }
 @keyframes goround {
     0%{

@@ -227,12 +227,6 @@ let addToCart = (e) =>{
     }
 }
 collate_button.onclick = () =>{
-    let moral = () =>{
-        let collate = document.querySelector(".collater");
-        let loading = document.querySelector(".mojito");
-        loading.classList.remove("right-aside2");
-        collate.classList.add('right-aside2');
-    }
     let determine = (added_arr, user_smoothies) =>{
         if((added_arr.some(element => element.innerText === "Dairy milk")) || added_arr.some(element => element.innerText === "Lactose intolerance")){
             user_smoothies = user_smoothies.concat(smoothies.filter(element => element.allergen === "Dairy milk"));
@@ -294,6 +288,13 @@ collate_button.onclick = () =>{
             let main = document.querySelector(".main");
             main.style.overflow = "scroll";
     }
+    let moral = () =>{
+        let collater = document.querySelector(".collater");
+                let loading = document.querySelector(".mojito");
+                loading.classList.remove("right-aside2");
+                collater.classList.add('right-aside2');
+                setTimeout(()=>{loading.classList.add("right-aside2");collater.classList.remove("right-aside2")}, 4000);
+    }
     let age_value = age.value;
     if(yessir && age_value === ""){
         // console.log("Teams");
@@ -311,7 +312,7 @@ collate_button.onclick = () =>{
            });
         }
         else{
-            moral;
+            moral();
             setTimeout(determine, 4000, added_arr, user_smoothies);
         }
         
@@ -351,9 +352,11 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                setTimeout(determine, 3000, added_arr, user_smoothies)
+                setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }
            
             document.querySelector("#age-input").value = "";
@@ -384,9 +387,11 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                setTimeout(determine, 3000, added_arr, user_smoothies)
+                setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }else{
-                setTimeout(determine, 3000, added_arr, user_smoothies)
+                setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }
             document.querySelector("#age-input").value = "";
         }else if(age_value >= 9 && age_value <= 13){
@@ -417,9 +422,11 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                setTimeout(determine, 3000, added_arr, user_smoothies)
+                setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }
             document.querySelector("#age-input").value = "";
         }else if(age_value >=14 && age_value <= 18){
@@ -449,9 +456,11 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                setTimeout(determine, 3000, added_arr, user_smoothies)
+                setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }else{
-                setTimeout(determine, 3000, added_arr, user_smoothies)
+                setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }
             document.querySelector("#age-input").value = "";
         }else if(age_value >= 19 && age_value <= 30){
@@ -481,9 +490,11 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                setTimeout(determine,3000, added_arr, user_smoothies)
+                setTimeout(determine,3000, added_arr, user_smoothies);
+                moral();
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }
             document.querySelector("#age-input").value = "";
         }else if(age_value >= 31 && age_value <= 50){
@@ -513,9 +524,11 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                setTimeout(determine, 3000, added_arr, user_smoothies)
+                setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }else{
-                setTimeout(determine, 3000, added_arr, user_smoothies)
+                setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }
             document.querySelector("#age-input").value = "";
         }else if(age_value >= 51){
@@ -545,9 +558,11 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                setTimeout(determine, 3000, added_arr, user_smoothies)
+                setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }else{
                 setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }
             document.querySelector("#age-input").value = "";
         }
@@ -556,9 +571,11 @@ collate_button.onclick = () =>{
             let user_smoothies = [];
             if(added_arr.length === 0){
                 user_smoothies = smoothies;
-                setTimeout(determine, 3000, added_arr, user_smoothies)
+                setTimeout(determine, 3000, added_arr, user_smoothies);
+                moral();
             }else{
                setTimeout(determine, 3000, added_arr, user_smoothies);
+               moral();
             }
             document.querySelector("#age-input").value = "";
         }

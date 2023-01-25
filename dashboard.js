@@ -74,7 +74,15 @@ window.onclick = (event) => {
       let main = document.querySelector(".main");
       main.style.overflow = "scroll"
     }
-  }
+}
+let closemodal = document.querySelector(".modal-close");
+
+closemodal.addEventListener("click", () =>{
+      modal.style.display = "none";
+      modalpack.style.transform = "translateY(30rem)"
+      let main = document.querySelector(".main");
+      main.style.overflow = "scroll"
+});
 // Modal code ends here
 // Code for displaying different pages and active states
 let links = document.getElementsByClassName("page-link");
