@@ -1183,6 +1183,9 @@ span.mojito{
     background-color: white;
     animation: goround 1.5s infinite;
 }
+.chatapp{
+    display: none;
+}
 @keyframes goround {
     0%{
         transform: rotate(0deg);

@@ -113,7 +113,7 @@ homebutton.addEventListener("click", () =>{
         }
     })
 });
-
+// meeting button
 let meeting = document.querySelector(".meeting-part");
 let meetingbutton = document.querySelector(".meetings")
 meetingbutton.addEventListener("click", () =>{
@@ -124,7 +124,7 @@ meetingbutton.addEventListener("click", () =>{
         }
     })
 })
-
+// julie
 let julie = document.querySelector(".julie-aspect");
 let juliebutton = document.querySelector(".julie");
 juliebutton.addEventListener("click", () =>{
@@ -134,6 +134,7 @@ juliebutton.addEventListener("click", () =>{
             page.classList.remove("showing")
         }})
 });
+// cart page
 let cart = document.querySelector(".cart");
 let cartbtn = document.querySelector(".cartbtn");
 cartbtn.addEventListener("click", () =>{
@@ -143,7 +144,9 @@ cartbtn.addEventListener("click", () =>{
             page.classList.remove("showing")
         }
     })
-})
+});
+// chatapp
+
 // Different pages code ends here
 // let checkbox = document.querySelectorAll(".checkbox");
 // for(let i = 0; i <checkbox.length; i++){
