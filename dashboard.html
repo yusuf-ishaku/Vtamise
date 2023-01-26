@@ -418,6 +418,10 @@
             <div>
                 <h3>You have not started chatting with anyone</h3>
             </div>
+            <div>
+                <input type="text" id="message" placeholder="enter something">
+                <button class="red" id="chat-submit">submit</button>
+            </div>
         </div>
         </main> 
         <aside class="right-aside">
@@ -486,6 +490,44 @@
                 <!--The chats and blog icon will be found under the socials in the responsive layout of the page and the logout will be found in the settings-->
         <!-- </div>
     </nav> -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-analytics.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-database.js"
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBV9mQryKNrEMkObOxf-70pOMcV7j7tYkM",
+          authDomain: "vchat-c5b3b.firebaseapp.com",
+          databaseURL: "https://vchat-c5b3b-default-rtdb.firebaseio.com",
+          projectId: "vchat-c5b3b",
+          storageBucket: "vchat-c5b3b.appspot.com",
+          messagingSenderId: "28715899102",
+          appId: "1:28715899102:web:f4d2f0e403e581bc9e0a4f",
+          measurementId: "G-GQJTY19DKC"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        // const analytics = getAnalytics(app);
+        const database = getDatabase(app);
+        const mailer = document.querySelector("#chat-submit").value;
+        let _chat = document.querySelector("#message");
+        function writeUserData(userId, name, email, imageUrl) {
+        const db = getDatabase();
+        set(ref(db, 'users/' + userId), {
+         username: name,
+         email: email,
+         profile_picture : imageUrl
+        });
+    }
+    mailer.addEventlister("click", writeUserData(_chat, _chat, _chat, _chat));
+ </script>
+ <script src="chatapp.js"></script>
  <script src='dashboard.js'></script>
  <script src="dashboard2.js"></script>
  <script src="dashboard3.js"></script>
