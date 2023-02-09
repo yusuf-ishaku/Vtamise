@@ -600,9 +600,8 @@ p.price{
     padding-bottom: 1.5rem;
 }
 /* For Julie page */
-.julie-aspect{
-    display: none;
-    max-width: 100%;
+.block{
+    display: block !important;
 }
 .juliepart{
     height: fit-content;
