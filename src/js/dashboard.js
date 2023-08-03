@@ -117,10 +117,11 @@ homebutton.addEventListener("click", () =>{
 let meeting = document.querySelector(".meeting-part");
 let meetingbutton = document.querySelector(".meetings")
 meetingbutton.addEventListener("click", () =>{
-    meeting.classList.add("showing");
+    // meeting.classList.add("showing");
     pages.forEach(page => {
         if(page !== meeting){ 
-            page.classList.remove("showing")
+            page.classList.remove("showing");
+            meeting.classList.add('showing')
         }
     })
 })
@@ -128,35 +129,37 @@ meetingbutton.addEventListener("click", () =>{
 let julie = document.querySelector(".julie-aspect");
 let juliebutton = document.querySelector(".julie");
 juliebutton.addEventListener("click", () =>{
-    julie.classList.add("showing");
+    // julie.classList.add("showing");
     pages.forEach(page => {
         if(page !== julie){
             page.classList.remove("showing")
+            julie.classList.add('showing');
         }})
 });
 // cart page
 let cart = document.querySelector(".cart");
 let cartbtn = document.querySelector(".cartbtn");
 cartbtn.addEventListener("click", () =>{
-    cart.classList.add("showing");
+    // cart.classList.add("showing");
     pages.forEach(page => {
         if(page !== cart){
-            page.classList.remove("showing")
+            page.classList.remove("showing");
+            cart.classList.add('showing')
         }
     })
 });
 // chatapp
-let chat = document.querySelector('.chatapp');
-let chatappbtn = document.querySelector(".chatappbtn");
-chatappbtn.addEventListener("click", () =>{
-    // console.log(chat)
-    chat.classList.add("showing");
-    pages.forEach(page =>{
-        if(page !== chat){
-            page.classList.remove("showing");
-        }
-    })
-})
+// let chat = document.querySelector('.chatapp');
+// let chatappbtn = document.querySelector(".chatappbtn");
+// chatappbtn.addEventListener("click", () =>{
+//     // console.log(chat)
+//     chat.classList.add("showing");
+//     pages.forEach(page =>{
+//         if(page !== chat){
+//             page.classList.remove("showing");
+//         }
+//     })
+// })
 
 // Different pages code ends here
 // let checkbox = document.querySelectorAll(".checkbox");

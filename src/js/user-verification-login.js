@@ -73,7 +73,7 @@ const validateInputs = (e) =>{
             let thename = [];
             thename.push(aname)
             localStorage.setItem("userName", JSON.stringify(thename));
-            location.href = "dashboard.html"
+            location.href = "./dashboard.html"
            }
         }
         // e.preventDefault();

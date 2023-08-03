@@ -600,6 +600,9 @@ p.price{
     padding-bottom: 1.5rem;
 }
 /* For Julie page */
+.julie-aspect{
+    display: none;
+}
 .block{
     display: block !important;
 }

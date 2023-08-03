@@ -25,7 +25,7 @@ button.addEventListener('click', e =>{
         setError("Please provide a valid email");
     }else{
        setSuccess("Well done!");
-       location.href = "form-page.html";
+       location.href = "./src/html/form-page.html";
        userData.push({emailValue});
        localStorage.setItem("emailData", JSON.stringify(userData));
        firstEmail.value = "";

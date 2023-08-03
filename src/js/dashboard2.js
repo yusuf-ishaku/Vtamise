@@ -96,7 +96,7 @@ let smoothies = [
         id: 9,
         servings: 1,
         calories: 250,
-        imgsrc: "images/smoothie1.png",
+        imgsrc: "../images/smoothie1.png",
         recipe: "1 unripe potato + 1 green banana + 1/2 glass of water(100ml) \n Instructions: Wash the potato, remove its skin and cut it into several pieces. Blend it until you get potato juice. Then, cut the green banana into several pieces and add them to the pitcher of the blender along with the potato juice. Finally, add half a glass of water to make it easier to liquify and process, until everything is properly mixed.",
     },
     {
@@ -130,7 +130,7 @@ let smoothies = [
         servings: 1,
         price: 3.19,
         calories: 280,
-        imgsrc: "images/smoothie1.png",
+        imgsrc: "../images/smoothie1.png",
         recipe: "1 unripe potato + 1 green banana + 1-2 pieces of ginger + 1/2 glass of clean water (100ml) \n Instructions: Wash the potato, remove it's skin and cut  into several pieces. Blend it until you get potato juice. Then, cut the green banana into several pieces and add them to the pitcher along with the potato juice. Grind the ginger to a pulp and add it to the mix. Finally, add half a glass of wate to make it easier to liquefy and process, until everything is properly mixed."
     },
     {

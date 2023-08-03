@@ -133,7 +133,7 @@ const validateInputs = () =>{
             
             document.querySelector('.username').value = "";
             document.querySelector('.password-input').value = "";
-            location.href = "initial-login-page.html";
+            location.href = "./initial-login-page.html";
         }else{
            setError(email, "Email already taken, try using a phone number");
            let mail = document.getElementById("email");

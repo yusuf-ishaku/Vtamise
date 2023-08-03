@@ -44,7 +44,7 @@ body{
 .intro{
     width:100vw;
     height: 600px;
-    background-image: url(images/background-intro.jpg);
+    background-image: url(../images/background-intro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -187,25 +187,25 @@ body{
 .first-image{
     width: 138px;
     height: 138px;
-    background-image: url(images/orange-background.png);
+    background-image: url(../images/orange-background.png);
     background-repeat: no-repeat;
 }
 .second-image{
     width: 138px;
     height: 138px;
-    background-image: url(images/fruit-image1.png);
+    background-image: url(../images/fruit-image1.png);
     background-repeat: no-repeat;
 }
 .third-image{
     width: 138px;
     height: 138px;
-    background-image: url(images/pineapple-background.png);
+    background-image: url(../images/pineapple-background.png);
     background-repeat: no-repeat;
 }
 .fourth-image{
     width: 138px;
     height: 138px;
-    background-image: url(images/background-blue.png);
+    background-image: url(../images/background-blue.png);
     background-repeat: no-repeat;
 }
 .icon-row{
@@ -584,14 +584,14 @@ body{
     color: rgb(4, 180, 4);;
 }
 .julien{
-    background-image: url("images/julien bishop.jpg");
+    background-image: url("../images/julien bishop.jpg");
 }
 .kate{
-    background-image: url("images/kate.jpg");
+    background-image: url("../images/kate.jpg");
     background-size: cover;
 }
 .stephen{
-    background-image: url("images/stephen.jpg");
+    background-image: url("../images/stephen.jpg");
     background-size: cover;
 }
 .book{
@@ -662,7 +662,7 @@ footer{
     }
 }
 .childimage{
-    background-image: url(images/childeating.jpg);
+    background-image: url(../images/childeating.jpg);
     object-fit: contain;
 
   }
@@ -699,17 +699,17 @@ footer{
     border-top-right-radius: 3px;
 }
 .market-image{
-    background-image: url("images/market-women.jpg");
+    background-image: url("../images/market-women.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .green-smoothie{
-    background-image: url("images/coconut-image.jpg");
+    background-image: url("../images/coconut-image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .many-fruits{
-    background-image: url("images/fruit-chain.jpg");
+    background-image: url("../images/fruit-chain.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -793,19 +793,19 @@ footer{
     background-color: red;
 }
 .old-man{
-    background-image: url("images/old-man.jpg");
+    background-image: url(../images/old-man.jpg);
     background-size: cover;
 }
 .black-girl{
-    background-image: url("images/black\ girl.jpg");
+    background-image: url(../images/black\ girl.jpg);
 }
 .american{
-    background-image: url("images/american.jpg");
+    background-image: url(../images/american.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 .asian{
-    background-image: url("images/asian.jpg");
+    background-image: url(../images/asian.jpg);
     background-size: cover;
 
 }
